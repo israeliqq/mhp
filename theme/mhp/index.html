@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>MyHotPlace</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+        <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+    <![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<div class="widget widget_search">
+			<form method="get" class="searchform form-inline" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Buscar por nombre..." id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button input_button">Buscar</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<section class="page_topline ds ms gorizontal_padding table_section">
+				<div class="container-fluid with_border">
+					<div class="row">
+
+
+
+
+						<div class="col-sm-4 col-md-3 col-lg-2 text-xs-center text-right text-lg-left">
+							<ul class="inline-dropdown inline-block">
+
+								<li class="dropdown cart-dropdown">
+									<div class="total-quantity text-center">0 Seleccionadas -
+										<span class="total-amount">$0.00</span>
+									</div>
+									<a class="topline-button" id="cart" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<i class="rt-icon2-star-o"></i>
+
+									</a>
+									<div class="dropdown-menu" aria-labelledby="cart">
+										<span class="grey">Recently added item(s)</span>
+										<div class="widget widget_shopping_cart">
+											<div class="widget_shopping_cart_content">
+												<ul class="cart_list product_list_widget media-list darklinks">
+													<li class="media">
+														<div class="media-left media-middle">
+															<a href="product-right.html">
+																<img src="images/models_square/01.jpg" alt="">
+															</a>
+														</div>
+														<div class="media-body media-middle">
+															<h4>
+																<a href="product-right.html">Stet clitad gubergren</a>
+															</h4>
+															<span class="quantity">1 ×
+																<span class="amount">$90</span>
+															</span>
+														</div>
+														<div class="media-body media-middle">
+															<a href="#" class="remove" title="Remove this item">
+																<i class="rt-icon2-trash highlight"></i>
+															</a>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left media-middle">
+															<a href="product-right.html">
+																<img src="images/models_square/02.jpg" alt="">
+															</a>
+														</div>
+
+														<div class="media-body media-middle">
+															<h4>
+																<a href="product-right.html">Takimata san bctus</a>
+															</h4>
+															<span class="quantity">1 ×
+																<span class="amount">$90</span>
+															</span>
+														</div>
+														<div class="media-body media-middle">
+															<a href="#" class="remove" title="Remove this item">
+																<i class="rt-icon2-trash highlight"></i>
+															</a>
+														</div>
+													</li>
+												</ul>
+												<!-- end product list -->
+
+												<p class="total">
+													<span class="grey">Cart Subtotal:
+														<span class="amount">$180</span>
+													</span>
+												</p>
+
+												<p class="buttons">
+													<a href="cart-right.html" class="theme_button color1">View All</a>
+													<a href="checkout-right.html" class="theme_button inverse">Checkout</a>
+												</p>
+
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown login-dropdown">
+									<a class="topline-button" id="login" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<i class="rt-icon2-user"></i>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="login">
+										<form role="form" action="/">
+											<div class="form-group">
+												<label for="login_email" class="sr-only">Email </label>
+												<input type="email" class="form-control" id="login_email" placeholder="Email">
+											</div>
+											<div class="form-group">
+												<label for="login_password" class="sr-only">Contraseña</label>
+												<input type="password" class="form-control" id="login_password" placeholder="Contraseña">
+											</div>
+											<button type="button" class="theme_button color1">
+												Ingresar
+											</button>
+											<div class="checkbox-inline">
+												<input type="checkbox" id="remember">
+												<label for="remember" class="bottommargin_0"> Recordar cuenta</label>
+											</div>
+										</form>
+										<div class="topmargin_25">
+											<a href="register.html" class="text-uppercase">¿Olvidaste la contraseña?</a>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="search_modal_button topline-button">
+										<i class="rt-icon2-search2"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<header class="page_header header_darkgrey columns_padding_0 table_section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 text-center">
+							<a href="./" class="logo logo_image">
+								<h1>My
+									<span class="muellerhoff">HotPlace</span>
+								</h1>
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="col-md-6 text-center">
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li class="active">
+										<a href="index.html">Inicio</a>
+									</li>
+
+									<li class="page-scroll">
+										<a href="#todas">Todas</a>
+	
+									</li>
+									<!-- eof pages -->
+
+
+									<li>
+										<a href="ver_mapa.html">Ver mapa</a>
+									</li>
+
+									<li>
+										<a href="#">Más servicios</a>
+										<ul>
+											<li>
+												<a href="moteles.html">Moteles</a>
+											</li>
+											<li>
+												<a href="sex_shop.html">Sex Shop</a>
+											</li>
+											<li>
+												<a href="delivery.html">Delivery</a>
+											</li>
+										</ul>
+
+									</li>
+
+								</ul>
+							</nav>
+							<!-- eof main nav -->
+							<span class="toggle_menu">
+								<span></span>
+							</span>
+						</div>
+						<div class="col-md-3 col-sm-6 header-contacts text-center hidden-xs">
+							<div class="highlight inline-block fontsize_30 thin">Disponibles</div>
+							<div class="fontsize_20 grey topmargin_-5">24/7 contáctanos</div>
+							<div class="filters isotope_filters inline-block margin_0"><a href="#" data-filter="*" class="selected">Crear cuenta</a></div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="ds ms intro_section page_mainslider">
+				<div class="owl-carousel page_maincarousel" data-margin="0" data-nav="true" data-loop="true" data-items="4">
+
+					<div>
+						<div class="vertical-item maincarousel-item content-absolute cs">
+							<div class="item-media">
+								<img src="images/top_carousel_01.jpg" alt="">
+								<div class="media-links">
+									<a class="abs-link" title="" href="perfil.html"></a>
+								</div>
+							</div>
+							<div class="item-content text-center grey gradient_bg_goriz">
+								<div class="bg_overlay"></div>
+								<div class="model-parameters">
+
+																		
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>
+										<a href="model.html">Juanita Stacy</a>
+									</h2>
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+									<div>							
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+										<br>
+										<span>Favorita</span>
+									</div>
+									<div>
+										<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+										<br>
+										<span>WhatsApp</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+										<br>
+										<span>120 Like</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+										<br>
+										<span>5 Km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="vertical-item maincarousel-item content-absolute cs">
+							<div class="item-media">
+								<img src="images/top_carousel_02.jpg" alt="">
+								<div class="media-links">
+									<a class="abs-link" title="" href="model.html"></a>
+								</div>
+							</div>
+							<div class="item-content text-center grey gradient_bg_goriz">
+								<div class="bg_overlay"></div>
+								<div class="model-parameters">
+
+																		
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>
+										<a href="model.html">Juanita Stacy</a>
+									</h2>
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+									<div>							
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+										<br>
+										<span>Favorita</span>
+									</div>
+									<div>
+										<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+										<br>
+										<span>WhatsApp</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+										<br>
+										<span>120 Like</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+										<br>
+										<span>5 Km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="vertical-item maincarousel-item content-absolute cs">
+							<div class="item-media">
+								<img src="images/top_carousel_03.jpg" alt="">
+								<div class="media-links">
+									<a class="abs-link" title="" href="model.html"></a>
+								</div>
+							</div>
+							<div class="item-content text-center grey gradient_bg_goriz">
+								<div class="bg_overlay"></div>
+								<div class="model-parameters">
+
+																		
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>
+										<a href="model.html">Juanita Stacy</a>
+									</h2>
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+									<div>							
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+										<br>
+										<span>Favorita</span>
+									</div>
+									<div>
+										<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+										<br>
+										<span>WhatsApp</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+										<br>
+										<span>120 Like</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+										<br>
+										<span>5 Km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="vertical-item maincarousel-item content-absolute cs">
+							<div class="item-media">
+								<img src="images/top_carousel_04.jpg" alt="">
+								<div class="media-links">
+									<a class="abs-link" title="" href="model.html"></a>
+								</div>
+							</div>
+							<div class="item-content text-center grey gradient_bg_goriz">
+								<div class="bg_overlay"></div>
+								<div class="model-parameters">
+
+																		
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>
+										<a href="model.html">Juanita Stacy</a>
+									</h2>
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+									<div>							
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+										<br>
+										<span>Favorita</span>
+									</div>
+									<div>
+										<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+										<br>
+										<span>WhatsApp</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+										<br>
+										<span>120 Like</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+										<br>
+										<span>5 Km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="vertical-item maincarousel-item content-absolute cs">
+							<div class="item-media">
+								<img src="images/top_carousel_05.jpg" alt="">
+								<div class="media-links">
+									<a class="abs-link" title="" href="model.html"></a>
+								</div>
+							</div>
+							<div class="item-content text-center grey gradient_bg_goriz">
+								<div class="bg_overlay"></div>
+								<div class="model-parameters">
+
+																		
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>
+										<a href="model.html">Juanita Stacy</a>
+									</h2>
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+									<div>							
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+										<br>
+										<span>Favorita</span>
+									</div>
+									<div>
+										<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+										<br>
+										<span>WhatsApp</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+										<br>
+										<span>120 Like</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+										<br>
+										<span>5 Km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="vertical-item maincarousel-item content-absolute cs">
+							<div class="item-media">
+								<img src="images/top_carousel_06.jpg" alt="">
+								<div class="media-links">
+									<a class="abs-link" title="" href="model.html"></a>
+								</div>
+							</div>
+							<div class="item-content text-center grey gradient_bg_goriz">
+								<div class="bg_overlay"></div>
+								<div class="model-parameters">
+
+																		
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>
+										<a href="model.html">Juanita Stacy</a>
+									</h2>
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+									<div>							
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+										<br>
+										<span>Favorita</span>
+									</div>
+									<div>
+										<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+										<br>
+										<span>WhatsApp</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+										<br>
+										<span>120 Like</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+										<br>
+										<span>5 Km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="vertical-item maincarousel-item content-absolute cs">
+							<div class="item-media">
+								<img src="images/top_carousel_07.jpg" alt="">
+								<div class="media-links">
+									<a class="abs-link" title="" href="model.html"></a>
+								</div>
+							</div>
+							<div class="item-content text-center grey gradient_bg_goriz">
+								<div class="bg_overlay"></div>
+								<div class="model-parameters">
+
+																		
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>
+										<a href="model.html">Juanita Stacy</a>
+									</h2>
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+									<div>							
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+										<br>
+										<span>Favorita</span>
+									</div>
+									<div>
+										<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+										<br>
+										<span>WhatsApp</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+										<br>
+										<span>120 Like</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+										<br>
+										<span>5 Km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="vertical-item maincarousel-item content-absolute cs">
+							<div class="item-media">
+								<img src="images/top_carousel_08.jpg" alt="">
+								<div class="media-links">
+									<a class="abs-link" title="" href="model.html"></a>
+								</div>
+							</div>
+							<div class="item-content text-center grey gradient_bg_goriz">
+								<div class="bg_overlay"></div>
+								<div class="model-parameters">
+
+																		
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>
+										<a href="model.html">Juanita Stacy</a>
+									</h2>
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+									<div>							
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+										<br>
+										<span>Favorita</span>
+									</div>
+									<div>
+										<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+										<br>
+										<span>WhatsApp</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+										<br>
+										<span>120 Like</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+										<br>
+										<span>5 Km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="vertical-item maincarousel-item content-absolute cs">
+							<div class="item-media">
+								<img src="images/top_carousel_09.jpg" alt="">
+								<div class="media-links">
+									<a class="abs-link" title="" href="model.html"></a>
+								</div>
+							</div>
+							<div class="item-content text-center grey gradient_bg_goriz">
+								<div class="bg_overlay"></div>
+								<div class="model-parameters">
+
+																		
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>
+										<a href="model.html">Juanita Stacy</a>
+									</h2>
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+									<div>							
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+										<br>
+										<span>Favorita</span>
+									</div>
+									<div>
+										<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+										<br>
+										<span>WhatsApp</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+										<br>
+										<span>120 Like</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+										<br>
+										<span>5 Km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="vertical-item maincarousel-item content-absolute cs">
+							<div class="item-media">
+								<img src="images/top_carousel_10.jpg" alt="">
+								<div class="media-links">
+									<a class="abs-link" title="" href="model.html"></a>
+								</div>
+							</div>
+							<div class="item-content text-center grey gradient_bg_goriz">
+								<div class="bg_overlay"></div>
+								<div class="model-parameters">
+
+																		
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>
+										<a href="model.html">Juanita Stacy</a>
+									</h2>
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+									<div>							
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+										<br>
+										<span>Favorita</span>
+									</div>
+									<div>
+										<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+										<br>
+										<span>WhatsApp</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+										<br>
+										<span>120 Like</span>
+									</div>
+									<div>
+										<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+										<br>
+										<span>5 Km</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+
+
+			<section id="todas" class="ds ms page_models models_portrait gorizontal_padding section_padding_70">
+				<div class="container-fluid">
+					<div class="row boxed-padding bottommargin_40">
+						<div class="col-lg-8">
+							<div class="filters isotope_filters inline-block margin_0">
+								<a href="#" data-filter="*" class="selected">Todas</a>
+								<a href="#" data-filter=".fashion">Calificadas</a>
+								<a href="#" data-filter=".studio">Ofertas</a>
+								<a href="#" data-filter=".fashion">Blancas</a>
+								<a href="#" data-filter=".studio">Morenas</a>
+								<a href="#" data-filter=".session">Mulatas</a>
+								<a href="#" data-filter=".fashion">Jovenes</a>
+								<a href="#" data-filter=".studio">Maduras</a>
+							</div>
+						</div>
+						<div class="col-lg-4 text-lg-right">
+							<form class="form-inline models-orderby">
+								<div class="form-group select-group">
+									<label class="sr-only" for="orderby">Sort By:</label>
+									<select class="form-control orderby" name="orderby" id="orderby">
+										<option value="default" selected="">Ciudad</option>
+										<option value="name">Arica</option>
+										<option value="date">Iquique</option>
+										<option value="random">Antofagasta</option>
+									</select>
+									<i class="rt-icon2-chevron-thin-down form-button"></i>
+								</div>								
+							</form>
+						</div>
+					</div>
+
+					<div class="isotope_container isotope row masonry-layout" data-filters=".isotope_filters">
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 fashion">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/13.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/13.jpg">Samantha Hawk</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 studio">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/14.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/14.jpg">Lana Anderson</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/15.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/15.jpg">Pamela Stonem</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 fashion">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/16.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/16.jpg">Naomy Olsen</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 studio">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/17.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/17.jpg">Gillian Rowe</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/18.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/18.jpg">Sonya Smith</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 fashion">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/19.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/19.jpg">Rachel Smalders</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 studio">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/20.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/20.jpg">Joanne Irwin</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/21.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/21.jpg">Sarah Quinn</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 fashion">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/22.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/22.jpg">Barbara Serney</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 studio">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/23.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/23.jpg">Pamela Torney</a>
+								</h4>
+							</div>
+						</div>
+
+						<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
+							<div class="vertical-item content-absolute">
+								<div class="item-media">
+									<img src="images/models_portrait/24.jpg" alt="">
+									<div class="media-links">
+										<div class="links-wrap">
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-title text-center">
+								<h4>
+									<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/models_portrait/24.jpg">Jessica Lee</a>
+								</h4>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12 text-center margin_0">
+							<ul class="pagination ">
+								<li>
+									<a href="#">
+										<span class="sr-only">Prev</span>
+										<i class="rt-icon2-chevron-thin-left"></i>
+									</a>
+								</li>
+								<li class="active">
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="sr-only">Next</span>
+										<i class="rt-icon2-chevron-thin-right"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+
+
+			<section class="ds section_padding_70 gorizontal_padding">
+				<div class="container-fluid">
+				<div class="flexslider banner-slider">
+								<ul class="slides">
+									<li class="gradient_bg_goriz">
+										<div class="bg_overlay"></div>
+										<img src="images/banner_slide_01.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" href="#"></a>
+										</div>
+									</li>
+									<li class="gradient_bg_goriz">
+										<div class="bg_overlay"></div>
+										<img src="images/banner_slide_02.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" href="#"></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+				</div>
+
+			</section>
+
+			<section class="ds ms section_padding_top_80 columns_padding_0">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="owl-carousel blog-carousel theme-owl-carousel" data-margin="30" data-nav="false" data-dots="true" data-center="true" data-loop="true" data-items="5" data-autoplay="false" data-responsive-xs="1" data-responsive-sm="2" data-responsive-md="2"
+							    data-responsive-lg="3" data-responsive-xlg="5">
+
+								<article class="vertical-item post format-video with_background">
+
+									<div class="entry-thumbnail">
+										<div class="embed-responsive embed-responsive-3by2">
+											<a href="https://www.youtube.com/embed/mcixldqDIEQ" class="embed-placeholder">
+
+												<img src="images/gallery/17.jpg" alt="">
+												<div class="media-links"></div>
+											</a>
+										</div>
+									</div>
+
+									<div class="item-content entry-content">
+										<h2 class="topmargin_0">
+											<a href="blog-single-right.html">Blog post (video)</a>
+										</h2>
+										<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
+											<a href="#">Session</a>
+										</div>
+										<p>
+											Aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.
+										</p>
+										<div class="page_social_icons topmargin_25">
+											<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
+											<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
+											<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
+											<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
+											<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
+										</div>
+									</div>
+									<!-- .item-content.entry-content -->
+								</article>
+
+								<article class="vertical-item post format-slider with_background">
+
+									<div class="entry-thumbnail">
+
+										<div id="carousel-generic" class="carousel slide">
+											<!-- Wrapper for slides -->
+											<div class="carousel-inner">
+												<div class="item active">
+													<img src="images/gallery/18.jpg" alt="image">
+												</div>
+												<div class="item">
+													<img src="images/gallery/03.jpg" alt="image">
+												</div>
+												<div class="item">
+													<img src="images/gallery/04.jpg" alt="image">
+												</div>
+											</div>
+
+											<!-- Controls -->
+											<a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+												<span class="icon-prev"></span>
+											</a>
+											<a class="right carousel-control" href="#carousel-generic" data-slide="next">
+												<span class="icon-next"></span>
+											</a>
+										</div>
+									</div>
+
+									<div class="item-content entry-content">
+										<h2 class="topmargin_0">
+											<a href="blog-single-right.html">Blog post (slider)</a>
+										</h2>
+										<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
+											<a href="#">Studio</a>,
+											<a href="#">Session</a>
+										</div>
+										<p>
+											No sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor a consetetur sadipscing elitr, sed diam.
+										</p>
+										<div class="page_social_icons topmargin_25">
+											<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
+											<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
+											<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
+											<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
+											<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
+										</div>
+									</div>
+									<!-- .item-content.entry-content -->
+								</article>
+
+								<article class="vertical-item post format-standard with_background">
+
+									<div class="item-media entry-thumbnail">
+										<img src="images/gallery/19.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="blog-single-right.html"></a>
+										</div>
+									</div>
+
+									<div class="item-content entry-content">
+										<h2 class="topmargin_0">
+											<a href="blog-single-right.html">Blog post (image)</a>
+										</h2>
+										<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
+											<a href="#">Fashion</a>,
+											<a href="#">Studio</a>,
+											<a href="#">Session</a>
+										</div>
+										<p>
+											Eirmod tempor invidunt labodolore magna aliquyam eratediam voluptua veto accusam et justo duo.
+										</p>
+										<div class="page_social_icons topmargin_25">
+											<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
+											<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
+											<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
+											<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
+											<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
+										</div>
+									</div>
+									<!-- .item-content.entry-content -->
+								</article>
+
+								<article class="vertical-item post format-standard with_background">
+
+									<div class="item-media entry-thumbnail">
+										<img src="images/gallery/04.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="blog-single-right.html"></a>
+										</div>
+									</div>
+
+									<div class="item-content entry-content">
+										<h2 class="topmargin_0">
+											<a href="blog-single-right.html">Blog post (image)</a>
+										</h2>
+										<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
+											<a href="#">Fashion</a>,
+											<a href="#">Session</a>
+										</div>
+										<p>
+											Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+										</p>
+										<div class="page_social_icons topmargin_25">
+											<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
+											<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
+											<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
+											<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
+											<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
+										</div>
+									</div>
+									<!-- .item-content.entry-content -->
+								</article>
+
+								<article class="vertical-item post format-standard with_background">
+
+									<div class="item-media entry-thumbnail">
+										<img src="images/gallery/16.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="blog-single-right.html"></a>
+										</div>
+									</div>
+
+									<div class="item-content entry-content">
+										<h2 class="topmargin_0">
+											<a href="blog-single-right.html">Blog post (image)</a>
+										</h2>
+										<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
+											<a href="#">Fashion</a>,
+											<a href="#">Session</a>
+										</div>
+										<p>
+											Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+										</p>
+										<div class="page_social_icons topmargin_25">
+											<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
+											<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
+											<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
+											<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
+											<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
+										</div>
+									</div>
+									<!-- .item-content.entry-content -->
+								</article>
+
+
+								<article class="vertical-item post format-video with_background">
+
+									<div class="entry-thumbnail">
+										<div class="embed-responsive embed-responsive-3by2">
+											<a href="https://www.youtube.com/embed/mcixldqDIEQ" class="embed-placeholder">
+
+												<img src="images/gallery/16.jpg" alt="">
+												<div class="media-links"></div>
+											</a>
+										</div>
+									</div>
+
+									<div class="item-content entry-content">
+										<h2 class="topmargin_0">
+											<a href="blog-single-right.html">Blog post (video)</a>
+										</h2>
+										<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
+											<a href="#">Session</a>
+										</div>
+										<p>
+											Aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.
+										</p>
+										<div class="page_social_icons topmargin_25">
+											<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
+											<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
+											<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
+											<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
+											<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
+										</div>
+									</div>
+									<!-- .item-content.entry-content -->
+								</article>
+
+								<article class="vertical-item post format-standard with_background">
+
+									<div class="item-media entry-thumbnail">
+										<img src="images/gallery/14.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="blog-single-right.html"></a>
+										</div>
+									</div>
+
+									<div class="item-content entry-content">
+										<h2 class="topmargin_0">
+											<a href="blog-single-right.html">Blog post (image)</a>
+										</h2>
+										<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
+											<a href="#">Fashion</a>,
+											<a href="#">Studio</a>,
+											<a href="#">Session</a>
+										</div>
+										<p>
+											Eirmod tempor invidunt labodolore magna aliquyam eratediam voluptua veto accusam et justo duo.
+										</p>
+										<div class="page_social_icons topmargin_25">
+											<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
+											<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
+											<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
+											<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
+											<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
+										</div>
+									</div>
+									<!-- .item-content.entry-content -->
+								</article>
+
+								<article class="vertical-item post format-standard with_background">
+
+									<div class="item-media entry-thumbnail">
+										<img src="images/gallery/01.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="blog-single-right.html"></a>
+										</div>
+									</div>
+
+									<div class="item-content entry-content">
+										<h2 class="topmargin_0">
+											<a href="blog-single-right.html">Blog post (image)</a>
+										</h2>
+										<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
+											<a href="#">Fashion</a>,
+											<a href="#">Session</a>
+										</div>
+										<p>
+											Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+										</p>
+										<div class="page_social_icons topmargin_25">
+											<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
+											<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
+											<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
+											<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
+											<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
+										</div>
+									</div>
+									<!-- .item-content.entry-content -->
+								</article>
+
+								<article class="vertical-item post format-standard with_background">
+
+									<div class="item-media entry-thumbnail">
+										<img src="images/gallery/06.jpg" alt="">
+										<div class="media-links">
+											<a class="abs-link" title="" href="blog-single-right.html"></a>
+										</div>
+									</div>
+
+									<div class="item-content entry-content">
+										<h2 class="topmargin_0">
+											<a href="blog-single-right.html">Blog post (image)</a>
+										</h2>
+										<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
+											<a href="#">Fashion</a>,
+											<a href="#">Session</a>
+										</div>
+										<p>
+											Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+										</p>
+										<div class="page_social_icons topmargin_25">
+											<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
+											<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
+											<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
+											<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
+											<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
+										</div>
+									</div>
+									<!-- .item-content.entry-content -->
+								</article>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="ds section_padding_70">
+
+			</section>
+
+
+<footer class="page_footer ds ms bg_image section_padding_50">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-3 col-sm-6 to_animate">
+							<div class="widget widget_text">
+								<a href="./" class="logo logo_image bottommargin_10">
+									<h1>My
+										<span class="muellerhoff">HotPlace</span>
+									</h1>
+									<img src="images/logo.png" alt="">
+								</a>
+								<p>
+									Portal para mayores de 18 años. MyHotPlace no se responsabiliza por el servicio de las escorts.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 to_animate">
+							<div class="widget widget_recent_entries">
+								<h3 class="widget-title">Enlaces</h3>
+								<ul class="list2 bottommargin_0">
+											<li class="">
+												<a href="#todas">Todas</a>
+											</li>
+											<li class="">
+												<a href="ver_mapa.html">Ver mapa</a>
+											</li>
+											<li class="">
+												<a href="moteles.html">Moteles</a>
+											</li>
+											<li class="">
+												<a href="sex_shop.html">Sex Shop</a>
+											</li>
+											<li class="">
+												<a href="delivery.html">Delivery</a>
+											</li>
+
+										</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 to_animate">
+							<div class="widget_text">
+								<h3 class="widget-title">Contáctanos</h3>
+								<p>Tarapacá, Iquique, Chile</p>
+								<div class="border-paragraphs">
+									<p>
+										<i class="rt-icon2-device-phone highlight"></i> +12 345 678 9123
+									</p>
+									<p>
+										<i class="rt-icon2-globe-outline highlight"></i>
+										<a href="./">www.myhotplace.com</a>
+									</p>
+									<p>
+										<i class="rt-icon2-mail2 highlight"></i>
+										<a href="mailto:contacto@myhotplace.com">contacto@myhotplace.com</a>
+									</p>
+
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 to_animate">
+							<div class="widget_text">
+								<h3 class="widget-title">Búscanos en:</h3>
+								<div class="media">
+									<div class="media-left media-middle">
+										<a class="social-icon color-bg-icon soc-facebook" href="#" title="Facebook"></a>
+									</div>
+									<div class="media-body media-middle">
+										Facebook
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left media-middle">
+										<a class="social-icon color-bg-icon soc-instagram" href="#" title="Instagram"></a>
+									</div>
+									<div class="media-body media-middle">
+										Instagram
+									</div>
+								</div>
+								<div class="media">
+									<div class="media-left media-middle">
+										<a class="social-icon color-bg-icon soc-youtube" href="#" title="Youtube"></a>
+									</div>
+									<div class="media-body media-middle">
+										Youtube
+									</div>
+								</div>
+							
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<section class="ls page_copyright section_padding_20">
+				<div class="container">
+					<div class="row topmargin_5 bottommargin_5">
+						<div class="col-sm-12 text-center">
+							<p class="darklinks">&copy; MyHotPlace  2017 | Servicios Escort
+								<i class="rt-icon2-heart highlight"></i> ir
+								<a href="http://www.myhotplace.com/app">App MyHotPlace</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

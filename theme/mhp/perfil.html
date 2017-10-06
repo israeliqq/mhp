@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>MyHotPlace</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+        <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+    <![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<div class="widget widget_search">
+			<form method="get" class="searchform form-inline" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Buscar por nombre..." id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button input_button">Buscar</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<section class="page_topline ds ms gorizontal_padding table_section">
+				<div class="container-fluid with_border">
+					<div class="row">
+
+
+
+
+						<div class="col-sm-4 col-md-3 col-lg-2 text-xs-center text-right text-lg-left">
+							<ul class="inline-dropdown inline-block">
+
+								<li class="dropdown cart-dropdown">
+									<div class="total-quantity text-center">0 Seleccionadas -
+										<span class="total-amount">$0.00</span>
+									</div>
+									<a class="topline-button" id="cart" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<i class="rt-icon2-star-o"></i>
+
+									</a>
+									<div class="dropdown-menu" aria-labelledby="cart">
+										<span class="grey">Recently added item(s)</span>
+										<div class="widget widget_shopping_cart">
+											<div class="widget_shopping_cart_content">
+												<ul class="cart_list product_list_widget media-list darklinks">
+													<li class="media">
+														<div class="media-left media-middle">
+															<a href="product-right.html">
+																<img src="images/models_square/01.jpg" alt="">
+															</a>
+														</div>
+														<div class="media-body media-middle">
+															<h4>
+																<a href="product-right.html">Stet clitad gubergren</a>
+															</h4>
+															<span class="quantity">1 ×
+																<span class="amount">$90</span>
+															</span>
+														</div>
+														<div class="media-body media-middle">
+															<a href="#" class="remove" title="Remove this item">
+																<i class="rt-icon2-trash highlight"></i>
+															</a>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left media-middle">
+															<a href="product-right.html">
+																<img src="images/models_square/02.jpg" alt="">
+															</a>
+														</div>
+
+														<div class="media-body media-middle">
+															<h4>
+																<a href="product-right.html">Takimata san bctus</a>
+															</h4>
+															<span class="quantity">1 ×
+																<span class="amount">$90</span>
+															</span>
+														</div>
+														<div class="media-body media-middle">
+															<a href="#" class="remove" title="Remove this item">
+																<i class="rt-icon2-trash highlight"></i>
+															</a>
+														</div>
+													</li>
+												</ul>
+												<!-- end product list -->
+
+												<p class="total">
+													<span class="grey">Cart Subtotal:
+														<span class="amount">$180</span>
+													</span>
+												</p>
+
+												<p class="buttons">
+													<a href="cart-right.html" class="theme_button color1">View All</a>
+													<a href="checkout-right.html" class="theme_button inverse">Checkout</a>
+												</p>
+
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown login-dropdown">
+									<a class="topline-button" id="login" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<i class="rt-icon2-user"></i>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="login">
+										<form role="form" action="/">
+											<div class="form-group">
+												<label for="login_email" class="sr-only">Email </label>
+												<input type="email" class="form-control" id="login_email" placeholder="Email">
+											</div>
+											<div class="form-group">
+												<label for="login_password" class="sr-only">Contraseña</label>
+												<input type="password" class="form-control" id="login_password" placeholder="Contraseña">
+											</div>
+											<button type="button" class="theme_button color1">
+												Ingresar
+											</button>
+											<div class="checkbox-inline">
+												<input type="checkbox" id="remember">
+												<label for="remember" class="bottommargin_0"> Recordar cuenta</label>
+											</div>
+										</form>
+										<div class="topmargin_25">
+											<a href="register.html" class="text-uppercase">¿Olvidaste la contraseña?</a>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="search_modal_button topline-button">
+										<i class="rt-icon2-search2"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<header class="page_header header_darkgrey columns_padding_0 table_section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 text-center">
+							<a href="./" class="logo logo_image">
+								<h1>My
+									<span class="muellerhoff">HotPlace</span>
+								</h1>
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="col-md-6 text-center">
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li>
+										<a href="index.html">Inicio</a>
+									</li>
+
+									<li class="page-scroll">
+										<a href="#todas">Todas</a>
+	
+									</li>
+									<!-- eof pages -->
+
+
+									<li>
+										<a href="ver_mapa.html">Ver mapa</a>
+									</li>
+
+									<li>
+										<a href="#">Más servicios</a>
+										<ul>
+											<li>
+												<a href="moteles.html">Moteles</a>
+											</li>
+											<li>
+												<a href="sex_shop.html">Sex Shop</a>
+											</li>
+											<li>
+												<a href="delivery.html">Delivery</a>
+											</li>
+										</ul>
+
+									</li>
+
+								</ul>
+							</nav>
+							<!-- eof main nav -->
+							<span class="toggle_menu">
+								<span></span>
+							</span>
+						</div>
+						<div class="col-md-3 col-sm-6 header-contacts text-center hidden-xs">
+							<div class="highlight inline-block fontsize_30 thin">Disponibles</div>
+							<div class="fontsize_20 grey topmargin_-5">24/7 contáctanos</div>
+							<div class="filters isotope_filters inline-block margin_0"><a href="#" data-filter="*" class="selected">Crear cuenta</a></div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+
+
+
+			<section class="ds model-page section_padding_70 section_padding_bottom_60 columns_padding_25">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-5 col-md-push-7">
+							<div class="vertical-item with_background models_square">
+								<div class="item-media">
+									<img src="images/models_square/17.jpg" alt="">
+								</div>
+								<div class="model-parameters">
+									<div>
+										<img src="img/flag_icons/png/cl.png" align="left">
+									</div>
+									<div>
+										<h2>Juanita Stacy<h2>
+									
+									</div>
+									<div>
+										<h2>23</h2>										
+									</div>
+																	
+									<br>
+
+								</div>
+
+
+
+
+								<div class="widget widget_text">
+								<div class="text-center">
+									<a href="#" class="social-icon big-icon color-bg-icon soc-rosa">
+										<i class="rt-icon2-star"></i>
+										<span class="counter" data-from="0" data-to="120" data-speed="1500">0</span>
+										<span>Favorita</span>
+									</a>
+									<a href="#" class="social-icon big-icon color-bg-icon soc-rosa">
+										<i class="rt-icon2-eye3"></i>
+										<span class="counter" data-from="0" data-to="120" data-speed="1500">0</span>
+										<span>Visitas</span>
+									</a>
+									<a href="#" class="social-icon big-icon color-bg-icon soc-rosa">
+										<i class="rt-icon2-like"></i>
+										<span class="counter" data-from="0" data-to="120" data-speed="1500">0</span>
+										<span>Like</span>
+									</a>
+									<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon big-icon color-bg-icon block-icon">
+										<i class="rt-icon2-whatsapp"></i>
+										<span>+ 56 9 12345678</span>
+										<span>WhatsApp</span>
+									</a>
+								</div>
+							</div>
+								<div class="item-content with_padding">
+									<ul class="media-list">
+										<li class="media">
+											<div class="media-left">
+												<i class="rt-icon2-location2 highlight"></i>
+											</div>
+											<div class="media-body">
+												<span class="bold fontsize_12 text-uppercase grey">Dirección:</span>
+												<br>
+												<span>Los Leones</span>
+											</div>
+										</li>
+										<li class="media">
+											<div class="media-left">
+												<i class="rt-icon2-banknote highlight"></i>
+											</div>
+											<div class="media-body">
+												<span class="bold fontsize_12 text-uppercase grey">Valor:</span>
+												<br>
+												<span>$100.000 x hora</span>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+
+
+							</div>
+
+						</div>
+
+						<div class="col-md-7 col-md-pull-5">
+							<h2 class="topmargin_0 bottommargin_30">Sobre mí:</h2>
+							<p>
+								At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ipsum dolor sit amet. Lorem ipsum
+								dolor sit amet, consetetur sadipscing elitr, sed diam nonumy tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum Stet clita kasd gubergren, no sea takimata sanctus
+								est Lorem ipsum dolor sit amet.
+							</p>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="widget widget_tag_cloud">
+										<h3 class="widget-title">Descripción:</h3>
+										<div class="tagcloud">
+											<a href="#" title="">Contextura Mediana</a>
+											<a href="#" title="">Cabello Negro</a>
+											<a href="#" title="">Ojos Castaños</a>
+											<a href="#" title="">Busto Grande</a>
+											<a href="#" title="">Cola Grande</a>
+											<a href="#" title="">Depilación Full</a>
+											<a href="#" title="">Tatuada</a>
+											<a href="#" title="">Depto Propio</a>
+											<a href="#" title="">Hoteles</a>
+											<a href="#" title="">100 - 66 - 100 CM</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="widget widget_tag_cloud">
+										<h3 class="widget-title">Servicios:</h3>
+										<div class="tagcloud">
+											<a href="#" title="">Parejas hetero</a>
+											<a href="#" title="">Bailes eróticos</a>
+											<a href="#" title="">Besos</a>
+											<a href="#" title="">Disfraces</a>
+											<a href="#" title="">Dos hombres</a>
+											<a href="#" title="">Juguetes</a>
+											<a href="#" title="">Masaje tántrico</a>
+											<a href="#" title="">Eventos y cenas</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="filters isotope_filters topmargin_50">
+								<a href="#" data-filter="*" class="selected">All</a>
+								<a href="#" data-filter=".tests">Tests</a>
+								<a href="#" data-filter=".editorials">Editorials</a>
+								<a href="#" data-filter=".snaps">Snaps</a>
+							</div>
+
+							<div class="columns_padding_5">
+								<div class="isotope_container isotope row masonry-layout" data-filters=".isotope_filters">
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 tests">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/01.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/01.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 editorials">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/02.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/02.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 snaps">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/03.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/03.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 tests">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/04.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/04.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 editorials">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/05.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/05.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 snaps">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/06.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/06.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 tests">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/07.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/07.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 editorials">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/08.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/08.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 snaps">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/09.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/09.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 tests">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/10.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/10.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 editorials">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/11.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/11.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 snaps">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/12.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/12.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 tests">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/13.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/13.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 editorials">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/14.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/14.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 snaps">
+										<div class="vertical-item gallery-item content-absolute text-center cs">
+											<div class="item-media">
+												<img src="images/models_square/15.jpg" alt="">
+												<div class="media-links">
+													<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="images/models_square/15.jpg"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- eof .isotope_container.row -->
+							</div>
+
+							
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="ds ms section_padding_30 page_social">
+				<div class="container">
+					<div class="row topmargin_20 bottommargin_10">
+						<div class="col-sm-12 text-center">
+							<div class="page_social_icons">
+								<a class="social-icon color-bg-icon soc-facebook" href="#" title="Facebook"></a>
+								<a class="social-icon color-bg-icon soc-instagram" href="#" title="Instagram"></a>
+								<a class="social-icon color-bg-icon soc-youtube" href="#" title="Youtube"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls page_copyright section_padding_20">
+				<div class="container">
+					<div class="row topmargin_5 bottommargin_5">
+						<div class="col-sm-12 text-center">
+							<p class="darklinks">&copy; MyHotPlace  2017 | Servicios Escort
+								<i class="rt-icon2-heart highlight"></i> ir
+								<a href="http://www.myhotplace.com/app">App MyHotPlace</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+	<!-- Google Map Script -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"></script>
+</body>
+
+</html>

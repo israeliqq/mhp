@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>MyHotPlace</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+        <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+    <![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<div class="widget widget_search">
+			<form method="get" class="searchform form-inline" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Búscala por su nombre..." id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button input_button">Buscar</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<section class="page_topline ds ms gorizontal_padding table_section">
+				<div class="container-fluid with_border">
+					<div class="row">
+
+
+
+
+						<div class="col-sm-4 col-md-3 col-lg-2 text-xs-center text-right text-lg-left">
+							<ul class="inline-dropdown inline-block">
+
+								<li class="dropdown cart-dropdown">
+									<div class="total-quantity text-center">0 Seleccionadas -
+										<span class="total-amount">$0.00</span>
+									</div>
+									<a class="topline-button" id="cart" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<i class="rt-icon2-star-o"></i>
+
+									</a>
+									<div class="dropdown-menu" aria-labelledby="cart">
+										<span class="grey">Recently added item(s)</span>
+										<div class="widget widget_shopping_cart">
+											<div class="widget_shopping_cart_content">
+												<ul class="cart_list product_list_widget media-list darklinks">
+													<li class="media">
+														<div class="media-left media-middle">
+															<a href="product-right.html">
+																<img src="images/models_square/01.jpg" alt="">
+															</a>
+														</div>
+														<div class="media-body media-middle">
+															<h4>
+																<a href="product-right.html">Stet clitad gubergren</a>
+															</h4>
+															<span class="quantity">1 ×
+																<span class="amount">$90</span>
+															</span>
+														</div>
+														<div class="media-body media-middle">
+															<a href="#" class="remove" title="Remove this item">
+																<i class="rt-icon2-trash highlight"></i>
+															</a>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left media-middle">
+															<a href="product-right.html">
+																<img src="images/models_square/02.jpg" alt="">
+															</a>
+														</div>
+
+														<div class="media-body media-middle">
+															<h4>
+																<a href="product-right.html">Takimata san bctus</a>
+															</h4>
+															<span class="quantity">1 ×
+																<span class="amount">$90</span>
+															</span>
+														</div>
+														<div class="media-body media-middle">
+															<a href="#" class="remove" title="Remove this item">
+																<i class="rt-icon2-trash highlight"></i>
+															</a>
+														</div>
+													</li>
+												</ul>
+												<!-- end product list -->
+
+												<p class="total">
+													<span class="grey">Cart Subtotal:
+														<span class="amount">$180</span>
+													</span>
+												</p>
+
+												<p class="buttons">
+													<a href="cart-right.html" class="theme_button color1">View All</a>
+													<a href="checkout-right.html" class="theme_button inverse">Checkout</a>
+												</p>
+
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown login-dropdown">
+									<a class="topline-button" id="login" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<i class="rt-icon2-user"></i>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="login">
+										<form role="form" action="/">
+											<div class="form-group">
+												<label for="login_email" class="sr-only">Email </label>
+												<input type="email" class="form-control" id="login_email" placeholder="Email">
+											</div>
+											<div class="form-group">
+												<label for="login_password" class="sr-only">Contraseña</label>
+												<input type="password" class="form-control" id="login_password" placeholder="Contraseña">
+											</div>
+											<button type="button" class="theme_button color1">
+												Ingresar
+											</button>
+											<div class="checkbox-inline">
+												<input type="checkbox" id="remember">
+												<label for="remember" class="bottommargin_0"> Recordar cuenta</label>
+											</div>
+										</form>
+										<div class="topmargin_25">
+											<a href="register.html" class="text-uppercase">¿Olvidaste la contraseña?</a>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="search_modal_button topline-button">
+										<i class="rt-icon2-search2"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<header class="page_header header_darkgrey columns_padding_0 table_section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 text-center">
+							<a href="./" class="logo logo_image">
+								<h1>My
+									<span class="muellerhoff">HotPlace</span>
+								</h1>
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="col-md-6 text-center">
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li class="active">
+										<a href="index.html">Inicio</a>
+									</li>
+
+									<li>
+										<a href="about.html">Filtrar</a>
+	
+									</li>
+									<!-- eof pages -->
+
+
+									<li>
+										<a href="chicas_cerca.html">Chicas cerca</a>
+									</li>
+
+									<li>
+										<a href="faq.html">Más servicios</a>
+										<ul>
+											<li>
+												<a href="copyright1.html">Moteles</a>
+											</li>
+											<li>
+												<a href="copyright1.html">Sex Shop</a>
+											</li>
+											<li>
+												<a href="copyright1.html">Delivery</a>
+											</li>
+										</ul>
+
+									</li>
+
+								</ul>
+							</nav>
+							<!-- eof main nav -->
+							<span class="toggle_menu">
+								<span></span>
+							</span>
+						</div>
+						<div class="col-md-3 col-sm-6 header-contacts text-center hidden-xs">
+							<div class="highlight inline-block fontsize_30 thin">Disponibles</div>
+							<div class="fontsize_20 grey topmargin_-5">24/7 contáctanos</div>
+							<div class="filters isotope_filters inline-block margin_0"><a href="#" data-filter="*" class="selected">Crear cuenta</a></div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="page_breadcrumbs changeable ls gradient gorizontal_padding section_padding_20 columns_padding_5 table_section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-3 text-center text-sm-left darklinks">
+							<a href="#">
+								<em>agency@support.com</em>
+							</a>
+						</div>
+						<div class="col-sm-6 text-center">
+							<ol class="breadcrumb">
+								<li>
+									<a href="./">
+										Home
+									</a>
+								</li>
+								<li>
+									<a href="#">Pages</a>
+								</li>
+								<li>
+									<a href="#">Blog</a>
+								</li>
+								<li class="active">
+									<span>Mosaic</span>
+								</li>
+							</ol>
+						</div>
+						<div class="col-sm-3 text-center text-sm-right">
+							<ul class="inline-dropdown inline-block">
+
+								<li class="dropdown cart-dropdown">
+									<div class="total-quantity text-center">0 items -
+										<span class="total-amount">$0.00</span>
+									</div>
+									<a class="topline-button" id="cart" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<i class="rt-icon2-basket"></i>
+
+									</a>
+									<div class="dropdown-menu ds" aria-labelledby="cart">
+										<span class="grey">Recently added item(s)</span>
+										<div class="widget widget_shopping_cart">
+											<div class="widget_shopping_cart_content">
+												<ul class="cart_list product_list_widget media-list darklinks">
+													<li class="media">
+														<div class="media-left media-middle">
+															<a href="product-right.html">
+																<img src="images/models_square/01.jpg" alt="">
+															</a>
+														</div>
+														<div class="media-body media-middle">
+															<h4>
+																<a href="product-right.html">Stet clitad gubergren</a>
+															</h4>
+															<span class="quantity">1 ×
+																<span class="amount">$90</span>
+															</span>
+														</div>
+														<div class="media-body media-middle">
+															<a href="#" class="remove" title="Remove this item">
+																<i class="rt-icon2-trash highlight"></i>
+															</a>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left media-middle">
+															<a href="product-right.html">
+																<img src="images/models_square/02.jpg" alt="">
+															</a>
+														</div>
+
+														<div class="media-body media-middle">
+															<h4>
+																<a href="product-right.html">Takimata san bctus</a>
+															</h4>
+															<span class="quantity">1 ×
+																<span class="amount">$90</span>
+															</span>
+														</div>
+														<div class="media-body media-middle">
+															<a href="#" class="remove" title="Remove this item">
+																<i class="rt-icon2-trash highlight"></i>
+															</a>
+														</div>
+													</li>
+												</ul>
+												<!-- end product list -->
+
+												<p class="total">
+													<span class="grey">Cart Subtotal:
+														<span class="amount">$180</span>
+													</span>
+												</p>
+
+												<p class="buttons">
+													<a href="cart-right.html" class="theme_button color1">View All</a>
+													<a href="checkout-right.html" class="theme_button inverse">Checkout</a>
+												</p>
+
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown login-dropdown">
+									<a class="topline-button" id="login" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<i class="rt-icon2-user"></i>
+									</a>
+									<div class="dropdown-menu ds" aria-labelledby="login">
+										<form role="form" action="/">
+											<div class="form-group">
+												<label for="login_email" class="sr-only">Email address</label>
+												<input type="email" class="form-control" id="login_email" placeholder="Email address">
+											</div>
+											<div class="form-group">
+												<label for="login_password" class="sr-only">Password</label>
+												<input type="password" class="form-control" id="login_password" placeholder="Password">
+											</div>
+											<button type="button" class="theme_button color1 bottommargin_0">
+												Log in
+											</button>
+											<div class="checkbox-inline">
+												<input type="checkbox" id="remember">
+												<label for="remember" class="bottommargin_0"> Remember Me</label>
+											</div>
+										</form>
+										<div class="topmargin_25">
+											<a href="register.html" class="text-uppercase">Forgot Your Password?</a>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="search_modal_button topline-button">
+										<i class="rt-icon2-search2"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ds page_portfolio section_padding_70">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+
+							<div class="isotope_container isotope row masonry-layout">
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/01.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Consetetur elitr tempor</a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/02.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Diam nonumy eirmod tempor </a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/03.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Eirmod elitr diam nonumy tempor</a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/04.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Tempor elitr diam nonumy</a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/05.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Consetetur elitr diam eirmod tempor </a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/06.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Nonumy onsetetur elitr diam eirmod tempor </a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/07.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Tempor consetetur elitr diam nonumy eirmod </a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/08.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Consetetur elitr diam nonumy eirmod tempor </a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/09.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Eirmod tempor consetetur elitr diam nonumy </a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/10.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Diam nonumy consetetur elitr eirmod tempor </a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/11.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Consetetur elitr diam nonumy eirmod tempor </a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis veliesse molestie consequat vel illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+								<div class="isotope-item col-lg-4 col-md-6 col-sm-12">
+									<article class="vertical-item mosaic-post post format-standard text-center muted_background">
+
+										<div class="item-media entry-thumbnail">
+											<img src="images/gallery/12.jpg" alt="">
+											<div class="media-links">
+												<a class="abs-link" title="" href="blog-single-right.html"></a>
+											</div>
+										</div>
+
+										<div class="item-content entry-content">
+											<header class="entry-header">
+
+												<h3 class="entry-title">
+													<a href="blog-single-right.html" rel="bookmark">Elitr diam nonumy consetetur eirmod tempor </a>
+												</h3>
+
+												<span class="date main_bg_color">
+													<time datetime="2016-01-10T15:05:23+00:00" class="entry-date">
+														Jan 10, 2016
+													</time>
+												</span>
+
+											</header>
+											<!-- .entry-header -->
+
+											<p>Duis autem eumre dolor hendrerit vulputate illum dolore at vero eros et accumsan et iusto odio dignissim.</p>
+
+										</div>
+										<!-- .item-content.entry-content -->
+										<div class="post-social-links text-center ls">
+											<a href="#" class="social-icon color-icon soc-twitter"></a>
+											<a href="#" class="social-icon color-icon soc-facebook"></a>
+											<a href="#" class="social-icon color-icon soc-google"></a>
+											<a href="#" class="social-icon color-icon soc-flickr"></a>
+										</div>
+									</article>
+								</div>
+
+							</div>
+							<!-- eof .isotope_container.row -->
+						</div>
+					</div>
+					<div class="row topmargin_20">
+						<div class="col-sm-12 text-center">
+							<img src="img/loading.png" alt="Loading" class="fa-spin">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ds ms section_padding_30 page_social">
+				<div class="container">
+					<div class="row topmargin_20 bottommargin_10">
+						<div class="col-sm-12 text-center">
+							<div class="page_social_icons">
+								<a class="social-icon color-bg-icon soc-facebook" href="#" title="Facebook"></a>
+								<a class="social-icon color-bg-icon soc-twitter" href="#" title="Twitter"></a>
+								<a class="social-icon color-bg-icon soc-google" href="#" title="Google"></a>
+								<a class="social-icon color-bg-icon soc-linkedin" href="#" title="LinkedIn"></a>
+								<a class="social-icon color-bg-icon soc-pinterest" href="#" title="Pinterest"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls page_copyright section_padding_20">
+				<div class="container">
+					<div class="row topmargin_5 bottommargin_5">
+						<div class="col-sm-12 text-center">
+							<p class="darklinks">&copy; Agency 2016 | Created with
+								<i class="rt-icon2-heart highlight"></i> by
+								<a href="http://modernwebtemplates.com">MWTemplates</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
