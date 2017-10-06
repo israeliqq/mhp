@@ -1,0 +1,7 @@
+
+RewriteOptions inherit
+RewriteEngine On
+RewriteBase /mhp
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /mhp/index.php/$1 [L]
