@@ -80,7 +80,7 @@ $db['default'] = array(
 	'password' => '',
 	'database' => 'escort',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => 'fu',
+	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
@@ -104,7 +104,7 @@ $db['default'] = array(
 	'password' => 'E1B]U)p25S',
 	'database' => 'santho_igni334',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => 'fu',
+	'dbprefix' => 'fu', //OJO AKI
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,

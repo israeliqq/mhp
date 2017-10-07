@@ -9,6 +9,32 @@ class Admin extends CI_Controller {
 	}
 
 	public function index(){
+
+		if($this->input->post())
+        {
+
+        	$escort=array
+     		(
+                'NOMBRE'=>strtoupper($this->input->post('nombre',true)),
+                'NACIONALIDAD'=>strtoupper($this->input->post('nacionalidad',true)),
+                'RAZA'=>strtoupper($this->input->post('raza',true)),
+                'EDAD'=>strtoupper($this->input->post('edad',true)),
+                'ESTATURA'=>strtoupper($this->input->post('estatura',true)),
+                'MEDIDAS'=>strtoupper($this->input->post('medidas',true)),
+                'PESO'=>strtoupper($this->input->post('peso',true)),
+                'TELEFONO'=>strtoupper($this->input->post('telefono',true)),
+                'DIRECCION'=>strtoupper($this->input->post('direccion',true)),
+                'CIUDAD'=>strtoupper($this->input->post('ciudad',true)),
+                'DEPTO'=>strtoupper($this->input->post('depto',true)),
+                'VALOR'=>strtoupper($this->input->post('valor',true)),
+                'HORA_I'=>strtoupper($this->input->post('entrada',true)),
+                'HORA_F'=>strtoupper($this->input->post('salida',true)),
+                'CLASIFICACION'=>strtoupper($this->input->post('clasificacion',true)),
+                'RETOQUE'=>strtoupper($this->input->post('retoque',true)),
+            );
+            $this->escort_model->InsertEscort($escort);
+        }
+
 		$ninas=$this->escort_model->getEscort();
 
 		//print_r($datos); exit;
@@ -19,7 +45,10 @@ class Admin extends CI_Controller {
 		$this->load->view('plantilla/footer_adm');
 	}
 
-
+	public function delete()
+	{
+		$id = $this->input->get('id');
+	}
 
 
 }
