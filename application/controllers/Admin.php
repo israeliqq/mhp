@@ -48,6 +48,8 @@ class Admin extends CI_Controller {
 	public function delete()
 	{
 		$id = $this->input->get('id');
+        $this->escort_model->DeleteEscort($id);
+        redirect(base_url()."admin");
 	}
 
 
