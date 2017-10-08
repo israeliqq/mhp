@@ -75,8 +75,8 @@
 					    <option value="Iquique">Iquique</option>
 					 </select>
 
-					<p><label>DEPARTAMENTO<span class="required"> *</span></label>
-					<input type="text" size="30" value="" name="depto" required class="form-control" placeholder="Departamento"></p>
+					<p><label>RESEÑA<span class="required"> *</span></label>
+					<input type="text" size="30" value="" name="resena" required class="form-control" placeholder="Reseña"></p>
 
 					<p><label>VALOR<span class="required"> *</span></label>
 					<input type="number" size="30" value="" name="valor" required class="form-control" placeholder="Valor"></p>	
@@ -127,12 +127,10 @@
 				<tr>
 					<th>NOMBRE</th>
 					<th>NACIONALIDAD</th>
-					<th>EDAD</th>
-					<th>ESTATURA</th>
+					<th>ALTURA PESO</th>
 					<th>MEDIDAS</th>
-					<th>PESO</th>
 					<th>TELEFONO</th>
-					<th>DERECCION</th>
+					<th>DIRECCION</th>
 					<th>VALOR</th>
 					<th>ACCIONES</th>
 				</tr>
@@ -140,18 +138,16 @@
 			<tbody class="grey">
 			<?php foreach($ninas as $datos){ ?>
 				<tr>
-					<td><?php echo $datos->NOMBRE;?></td>
+					<td><?php echo $datos->NOMBRE;?> <br> <?php echo $datos->EDAD;?> AÑOS</td>
 					<td><?php echo $datos->NACIONALIDAD;?>, <?php echo $datos->RAZA;?></td>
-					<td><?php echo $datos->EDAD;?></td>
-					<td><?php echo $datos->ESTATURA;?> m</td>
+					<td><?php echo $datos->ESTATURA;?> m <br><?php echo $datos->PESO;?> Kg</td>
 					<td><?php echo $datos->MEDIDAS;?></td>
-					<td><?php echo $datos->PESO;?> Kg</td>
 					<td><?php echo $datos->TELEFONO;?></td>
 					<td><?php echo $datos->DIRECCION;?>, <?php echo $datos->CIUDAD;?></td>
-					<td>$<?php echo $datos->VALOR;?>, <?php echo $datos->CLASIFICACION;?></td>
+					<td>$<?php echo $datos->VALOR;?> <br> <?php echo $datos->CLASIFICACION;?></td>
 					<td align="center">
 						<h3>
-						<a href="<?php echo base_url();?>admin/delete?id=<?php echo $datos->ID; ?>" target="_blank"><i class="rt-icon2-trash highlight"></i></a>&nbsp;
+						<a href="<?php echo base_url();?>admin/delete?id=<?php echo $datos->ID; ?>"><i class="rt-icon2-trash highlight"></i></a>&nbsp;
 						<a data-toggle="modal" href="#myModal<?php echo $datos->ID;?>"><i class="rt-icon2-pen highlight"></i></a>
 						</h3>
 					</td>
@@ -227,8 +223,8 @@
 					    <option value="Iquique">Iquique</option>
 					 </select>
 
-					<p><label>DEPARTAMENTO<span class="required"> *</span></label>
-					<input type="text" size="30" value="<?php echo $datos->DEPTO;?>" name="depto2" required class="form-control" placeholder="Departamento"></p>
+					<p><label>RESEÑA<span class="required"> *</span></label>
+					<input type="text" size="30" value="<?php echo $datos->RESENA;?>" name="resena2" required class="form-control" placeholder="Reseña"></p>
 
 					<p><label>VALOR<span class="required"> *</span></label>
 					<input type="number"  size="30" value="<?php echo $datos->VALOR;?>" name="valor2" required class="form-control" placeholder="Valor"></p>	

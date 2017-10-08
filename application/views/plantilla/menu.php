@@ -15,27 +15,70 @@
     <div id="box_wrapper">
 
 
-
-<!-- template sections -->
-
-<section class="page_topline ds ms gorizontal_padding table_section">
-  <div class="container-fluid with_border">
+<header class="page_header header_darkgrey columns_padding_0 table_section">
+  <div class="container-fluid">
     <div class="row">
+      <div class="col-md-3 col-sm-6 text-center">
+        <a href="./" class="logo logo_image">
+          <h1>My
+            <span class="muellerhoff">HotPlace</span>
+          </h1>
+          <img src="images/logo.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-6 text-center">
+        <!-- main nav start -->
+        <nav class="mainmenu_wrapper">
+          <ul class="mainmenu nav sf-menu">
+            <li class="active">
+              <a href="<?php echo base_url();?>home/index">Inicio</a>
+            </li>
+
+            <li>
+              <a href="#">Ver Todas</a>
+              <ul>
+                <li>
+                  <a href="<?php echo base_url();?>home/todas">Arica</a>
+                </li>
+                <li>
+                  <a href="<?php echo base_url();?>home/todas">Antofagasta</a>
+                </li>
+                <li>
+                  <a href="<?php echo base_url();?>home/todas">Calama</a>
+                </li>
+                <li>
+                  <a href="<?php echo base_url();?>home/todas">Iquique</a>
+                </li>
+              </ul>
+            </li>
+            <!-- eof pages -->
 
 
-      <div class="col-sm-4 col-md-3 col-lg-2 text-xs-center text-right text-lg-left">
+            <li>
+              <a href="<?php echo base_url();?>home/mapa">Encuentrame</a>
+            </li>
+
+            <li>
+              <a href="<?php echo base_url();?>home/servicios">Extras</a>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- eof main nav -->
+        <span class="toggle_menu">
+          <span></span>
+        </span>
+      </div>
+      <div class="col-sm-4 col-md-3 col-lg-2 ds ms">
         <ul class="inline-dropdown inline-block">
 
           <li class="dropdown cart-dropdown">
-            <div class="total-quantity text-center">0 Seleccionadas -
-              <span class="total-amount">$0.00</span>
-            </div>
             <a class="topline-button" id="cart" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
               <i class="rt-icon2-star-o"></i>
 
             </a>
             <div class="dropdown-menu" aria-labelledby="cart">
-              <span class="grey">Recently added item(s)</span>
+              <span class="grey">Mis Favoritas</span>
               <div class="widget widget_shopping_cart">
                 <div class="widget_shopping_cart_content">
                   <ul class="cart_list product_list_widget media-list darklinks">
@@ -47,10 +90,10 @@
                       </div>
                       <div class="media-body media-middle">
                         <h4>
-                          <a href="product-right.html">Stet clitad gubergren</a>
+                          <a href="product-right.html">CIELO </a>
                         </h4>
-                        <span class="quantity">1 ×
-                          <span class="amount">$90</span>
+                        <span class="quantity">CALIFICACION
+                          <span class="amount">6.8</span>
                         </span>
                       </div>
                       <div class="media-body media-middle">
@@ -68,10 +111,10 @@
 
                       <div class="media-body media-middle">
                         <h4>
-                          <a href="product-right.html">Takimata san bctus</a>
+                          <a href="product-right.html">ANDREA</a>
                         </h4>
-                        <span class="quantity">1 ×
-                          <span class="amount">$90</span>
+                        <span class="quantity">CALIFICACION
+                          <span class="amount">7.0</span>
                         </span>
                       </div>
                       <div class="media-body media-middle">
@@ -82,16 +125,11 @@
                     </li>
                   </ul>
                   <!-- end product list -->
-
-                  <p class="total">
-                    <span class="grey">Cart Subtotal:
-                      <span class="amount">$180</span>
-                    </span>
-                  </p>
+                  <br>
 
                   <p class="buttons">
-                    <a href="cart-right.html" class="theme_button color1">View All</a>
-                    <a href="checkout-right.html" class="theme_button inverse">Checkout</a>
+                    <a href="cart-right.html" class="theme_button color1">Editar</a>
+                    <a href="checkout-right.html" class="theme_button inverse">Agendar</a>
                   </p>
 
                 </div>
@@ -117,11 +155,14 @@
                 </button>
                 <div class="checkbox-inline">
                   <input type="checkbox" id="remember">
-                  <label for="remember" class="bottommargin_0"> Recordar cuenta</label>
+                  <label for="remember" class="bottommargin_0"> Recordar Cuenta</label>
                 </div>
               </form>
               <div class="topmargin_25">
                 <a href="register.html" class="text-uppercase">¿Olvidaste la contraseña?</a>
+              </div>
+              <div class="topmargin_25">
+                <a href="register.html" class="text-uppercase">Crear Cuenta</a>
               </div>
             </div>
           </li>
@@ -131,57 +172,6 @@
             </a>
           </li>
         </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<header class="page_header header_darkgrey columns_padding_0 table_section">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 text-center">
-        <a href="./" class="logo logo_image">
-          <h1>My
-            <span class="muellerhoff">HotPlace</span>
-          </h1>
-          <img src="images/logo.png" alt="">
-        </a>
-      </div>
-      <div class="col-md-6 text-center">
-        <!-- main nav start -->
-        <nav class="mainmenu_wrapper">
-          <ul class="mainmenu nav sf-menu">
-            <li class="active">
-              <a href="<?php echo base_url();?>home/index">Inicio</a>
-            </li>
-
-            <li class="page-scroll">
-              <a href="<?php echo base_url();?>home/todas">Todas</a>
-
-            </li>
-            <!-- eof pages -->
-
-
-            <li>
-              <a href="<?php echo base_url();?>home/mapa">Ver mapa</a>
-            </li>
-
-            <li>
-              <a href="<?php echo base_url();?>home/servicios">Servicios</a>
-            </li>
-
-          </ul>
-        </nav>
-        <!-- eof main nav -->
-        <span class="toggle_menu">
-          <span></span>
-        </span>
-      </div>
-      <div class="col-md-3 col-sm-6 header-contacts text-center hidden-xs">
-        <div class="highlight inline-block fontsize_30 thin">Disponibles</div>
-        <div class="fontsize_20 grey topmargin_-5">24/7 contáctanos</div>
-        <div class="filters isotope_filters inline-block margin_0"><a href="#" data-filter="*" class="selected">Crear cuenta</a></div>
       </div>
     </div>
   </div>

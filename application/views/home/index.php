@@ -21,7 +21,7 @@
 						</div>
 						<div>
 							<h2>
-							<a href="model.html">Juanita Stacy</a>
+							<a href="<?php echo base_url();?>home/perfil">Juanita Stacy</a>
 						</h2>
 						</div>
 						<div>
@@ -72,7 +72,7 @@
 						</div>
 						<div>
 							<h2>
-							<a href="model.html">Juanita Stacy</a>
+							<a href="<?php echo base_url();?>home/perfil">Juanita Stacy</a>
 						</h2>
 						</div>
 						<div>
@@ -123,7 +123,7 @@
 						</div>
 						<div>
 							<h2>
-							<a href="model.html">Juanita Stacy</a>
+							<a href="<?php echo base_url();?>home/perfil">Juanita Stacy</a>
 						</h2>
 						</div>
 						<div>
@@ -166,15 +166,13 @@
 				</div>
 				<div class="item-content text-center grey gradient_bg_goriz">
 					<div class="bg_overlay"></div>
-					<div class="model-parameters">
-
-															
+					<div class="model-parameters">								
 						<div>
 							<img src="<?php echo base_url();?>tool/img/flag_icons/png/cl.png" align="left">
 						</div>
 						<div>
 							<h2>
-							<a href="model.html">Juanita Stacy</a>
+							<a href="<?php echo base_url();?>home/perfil">Juanita Stacy</a>
 						</h2>
 						</div>
 						<div>
@@ -308,31 +306,30 @@
 </section>
 
 
-
+<!--BANNER -->
 <section class="ds section_padding_70 gorizontal_padding">
 	<div class="container-fluid">
 	<div class="flexslider banner-slider">
-					<ul class="slides">
-						<li class="gradient_bg_goriz">
-							<div class="bg_overlay"></div>
-							<img src="<?php echo base_url();?>tool/images/banner_slide_01.jpg" alt="">
-							<div class="media-links">
-								<a class="abs-link" href="#"></a>
-							</div>
-						</li>
-						<li class="gradient_bg_goriz">
-							<div class="bg_overlay"></div>
-							<img src="<?php echo base_url();?>tool/images/banner_slide_02.jpg" alt="">
-							<div class="media-links">
-								<a class="abs-link" href="#"></a>
-							</div>
-						</li>
-					</ul>
+		<ul class="slides">
+			<li class="gradient_bg_goriz">
+				<div class="bg_overlay"></div>
+				<img src="<?php echo base_url();?>tool/images/banner_slide_01.jpg" alt="">
+				<div class="media-links">
+					<a class="abs-link" href="#"></a>
 				</div>
-
+			</li>
+			<li class="gradient_bg_goriz">
+				<div class="bg_overlay"></div>
+				<img src="<?php echo base_url();?>tool/images/banner_slide_02.jpg" alt="">
+				<div class="media-links">
+					<a class="abs-link" href="#"></a>
+				</div>
+			</li>
+		</ul>
 	</div>
-
+	</div>
 </section>
+<!--END BANNER -->
 
 <section class="ds ms section_padding_top_80 columns_padding_0">
 	<div class="container-fluid">
@@ -364,13 +361,6 @@
 							<p>
 								Aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.
 							</p>
-							<div class="page_social_icons topmargin_25">
-								<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
-								<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
-								<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
-								<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
-								<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
-							</div>
 						</div>
 						<!-- .item-content.entry-content -->
 					</article>
@@ -414,13 +404,7 @@
 							<p>
 								No sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor a consetetur sadipscing elitr, sed diam.
 							</p>
-							<div class="page_social_icons topmargin_25">
-								<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
-								<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
-								<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
-								<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
-								<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
-							</div>
+
 						</div>
 						<!-- .item-content.entry-content -->
 					</article>
@@ -446,13 +430,7 @@
 							<p>
 								Eirmod tempor invidunt labodolore magna aliquyam eratediam voluptua veto accusam et justo duo.
 							</p>
-							<div class="page_social_icons topmargin_25">
-								<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
-								<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
-								<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
-								<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
-								<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
-							</div>
+
 						</div>
 						<!-- .item-content.entry-content -->
 					</article>
@@ -477,13 +455,7 @@
 							<p>
 								Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
 							</p>
-							<div class="page_social_icons topmargin_25">
-								<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
-								<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
-								<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
-								<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
-								<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
-							</div>
+
 						</div>
 						<!-- .item-content.entry-content -->
 					</article>
@@ -508,13 +480,7 @@
 							<p>
 								Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
 							</p>
-							<div class="page_social_icons topmargin_25">
-								<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
-								<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
-								<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
-								<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
-								<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
-							</div>
+
 						</div>
 						<!-- .item-content.entry-content -->
 					</article>
@@ -542,13 +508,6 @@
 							<p>
 								Aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.
 							</p>
-							<div class="page_social_icons topmargin_25">
-								<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
-								<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
-								<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
-								<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
-								<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
-							</div>
 						</div>
 						<!-- .item-content.entry-content -->
 					</article>
@@ -574,13 +533,6 @@
 							<p>
 								Eirmod tempor invidunt labodolore magna aliquyam eratediam voluptua veto accusam et justo duo.
 							</p>
-							<div class="page_social_icons topmargin_25">
-								<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
-								<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
-								<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
-								<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
-								<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
-							</div>
 						</div>
 						<!-- .item-content.entry-content -->
 					</article>
@@ -605,13 +557,6 @@
 							<p>
 								Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
 							</p>
-							<div class="page_social_icons topmargin_25">
-								<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
-								<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
-								<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
-								<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
-								<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
-							</div>
 						</div>
 						<!-- .item-content.entry-content -->
 					</article>
@@ -636,13 +581,6 @@
 							<p>
 								Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
 							</p>
-							<div class="page_social_icons topmargin_25">
-								<a class="social-icon color-icon soc-facebook" href="#" title="Facebook"></a>
-								<a class="social-icon color-icon soc-twitter" href="#" title="Twitter"></a>
-								<a class="social-icon color-icon soc-google" href="#" title="Google"></a>
-								<a class="social-icon color-icon soc-linkedin" href="#" title="LinkedIn"></a>
-								<a class="social-icon color-icon soc-pinterest" href="#" title="Pinterest"></a>
-							</div>
 						</div>
 						<!-- .item-content.entry-content -->
 					</article>

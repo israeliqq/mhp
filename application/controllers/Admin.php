@@ -25,7 +25,7 @@ class Admin extends CI_Controller {
                 'TELEFONO'=>strtoupper($this->input->post('telefono',true)),
                 'DIRECCION'=>strtoupper($this->input->post('direccion',true)),
                 'CIUDAD'=>strtoupper($this->input->post('ciudad',true)),
-                'DEPTO'=>strtoupper($this->input->post('depto',true)),
+                'RESENA'=>strtoupper($this->input->post('resena',true)),
                 'VALOR'=>strtoupper($this->input->post('valor',true)),
                 'HORA_I'=>strtoupper($this->input->post('entrada',true)),
                 'HORA_F'=>strtoupper($this->input->post('salida',true)),

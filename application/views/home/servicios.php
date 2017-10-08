@@ -1,4 +1,13 @@
-
+<section id="comingsoon1" class="ds ms section_padding_top_80 section_padding_bottom_100">
+	<div class="row">
+		<div class="col-sm-12 text-center">
+			<h2>
+				<span class="grey">SERVICIOS DE MOTELES, SEXSHOP Y DELIVERY</span>
+			</h2>
+		</div>
+	</div>
+	<br>
+</section>
 
 <section class="ds ms section_padding_50">
 <?php for ($i=0; $i < 9 ; $i++) { ?>

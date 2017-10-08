@@ -19,25 +19,14 @@
 							</div>
 						</div>
 
-						<div class="col-md-3 col-sm-6 to_animate">
-							<div class="widget widget_recent_entries">
-								<h3 class="widget-title">Enlaces</h3>
-								<ul class="list2 bottommargin_0">
-											<li class="">
-												<a href="<?php echo base_url();?>home/index">Inicio</a>
-											</li>
-											<li class="">
-												<a href="<?php echo base_url();?>home/todas">Todas</a>
-											</li>
-											<li class="">
-												<a href="<?php echo base_url();?>home/mapa">Mapa</a>
-											</li>
-											<li class="">
-												<a href="<?php echo base_url();?>home/servicios">Servicios</a>
-											</li>
-
-
-										</ul>
+						<div class="col-md-3 col-sm-6 to_animate dark_bg_color">
+							<div class="widget_text">
+								<h3 class="widget-title">Anunciate !</h3>
+								<h1 class="text-md-center">
+									<i class="rt-icon2-cloud-storage highlight"></i>
+								</h1>
+								<p class="text-md-center">Publica aqui tus avisos como escort, sexshop, moteles y delivery's. <br><br><a href="<?php echo base_url();?>home/contacto"" class="theme_button inverse">ANUNCIAR !</a></p>
+								
 							</div>
 						</div>
 
@@ -47,7 +36,7 @@
 								<p>Tarapacá, Iquique, Chile</p>
 								<div class="border-paragraphs">
 									<p>
-										<i class="rt-icon2-device-phone highlight"></i> +12 345 678 9123
+										<i class="rt-icon2-device-phone highlight"></i> +56 9 3005 6534
 									</p>
 									<p>
 										<i class="rt-icon2-globe-outline highlight"></i>

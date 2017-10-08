@@ -9,6 +9,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel='shortcut icon' href="<?php echo base_url();?>tool/favicon.ico" type='image/x-icon'/>
+
   <link rel="stylesheet" href="<?php echo base_url();?>tool/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>tool/css/main.css" id="color-switcher-link">
   <link rel="stylesheet" href="<?php echo base_url();?>tool/css/animations.css">
