@@ -9,7 +9,7 @@
 	<br>
 </section>
 
-<section class="ds ms section_padding_50">
+<section class="ds ms intro_section page_mainslider">
 <?php for ($i=0; $i < 9 ; $i++) { ?>
 
 

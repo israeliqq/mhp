@@ -1,4 +1,7 @@
+<style type="text/css">
 
+
+</style>
 
 <section class="ds ms intro_section page_mainslider">
 	<div class="owl-carousel page_maincarousel" data-margin="0" data-nav="true" data-loop="true" data-items="4">
@@ -8,47 +11,42 @@
 				<div class="item-media">
 					<img src="<?php echo base_url();?>tool/images/top_carousel_01.jpg" alt="">
 					<div class="media-links">
-						<a class="abs-link" title="" href="perfil.html"></a>
+						<a class="abs-link" title="" href="<?php echo base_url();?>home/perfil"></a>
 					</div>
 				</div>
 				<div class="item-content text-center grey gradient_bg_goriz">
 					<div class="bg_overlay"></div>
-					<div class="model-parameters">
+					<div class="model-parameters">					
+						<div style="font-size: 35px;"><br>
+								<a href="<?php echo base_url();?>home/perfil">Juanita | <b>23</b></a>
+							
+						</div>	<br>					
+						<div class="col-md-3">							
+							<a href="#"><i class="rt-icon2-eye3" style="font-size: 35px;"></i></a>
+							<br>
+							<span class="bold">350</span>
+						</div>
+						<div class="col-md-3">	
+							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
+							<br>
+							<span class="bold">5,6</span>
+						</div>
+						<div class="col-md-3">	
+							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
+							<br>
+							<span class="bold">WSP</span>
+						</div>
 
-															
-						<div>
-							<img src="<?php echo base_url();?>tool/img/flag_icons/png/cl.png" align="left">
-						</div>
-						<div>
-							<h2>
-							<a href="<?php echo base_url();?>home/perfil">Juanita Stacy</a>
-						</h2>
-						</div>
-						<div>
-							<h2>23</h2>										
-						</div>
-														
-						<br>
-						<div>							
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+						<div class="col-md-3">	
+							<a href="#"><i class="rt-icon2-pin-alt" style="font-size: 35px;"></i></a>
 							<br>
-							<span>Favorita</span>
-						</div>
-						<div>
-							<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
-							<br>
-							<span>WhatsApp</span>
-						</div>
-						<div>
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
-							<br>
-							<span>120 Like</span>
-						</div>
-						<div>
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
-							<br>
-							<span>5 Km</span>
-						</div>
+							<span class="bold">5 Km</span>
+						</div><br>
+						<div style="font-size: 15px;">
+							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>GOLD</b><br>
+							<span class="bold">Ciudad: </span>Santiago, Chile
+						</div>		
+					
 					</div>
 				</div>
 			</div>
@@ -59,47 +57,42 @@
 				<div class="item-media">
 					<img src="<?php echo base_url();?>tool/images/top_carousel_02.jpg" alt="">
 					<div class="media-links">
-						<a class="abs-link" title="" href="model.html"></a>
+						<a class="abs-link" title="" href="<?php echo base_url();?>home/perfil"></a>
 					</div>
 				</div>
 				<div class="item-content text-center grey gradient_bg_goriz">
 					<div class="bg_overlay"></div>
-					<div class="model-parameters">
+					<div class="model-parameters">					
+						<div style="font-size: 35px;"><br>
+								<a href="<?php echo base_url();?>home/perfil">Juanita | <b>23</b></a>
+							
+						</div>	<br>					
+						<div class="col-md-3">							
+							<a href="#"><i class="rt-icon2-eye3" style="font-size: 35px;"></i></a>
+							<br>
+							<span class="bold">350</span>
+						</div>
+						<div class="col-md-3">	
+							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
+							<br>
+							<span class="bold">5,6</span>
+						</div>
+						<div class="col-md-3">	
+							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
+							<br>
+							<span class="bold">SMS</span>
+						</div>
 
-															
-						<div>
-							<img src="<?php echo base_url();?>tool/img/flag_icons/png/cl.png" align="left">
-						</div>
-						<div>
-							<h2>
-							<a href="<?php echo base_url();?>home/perfil">Juanita Stacy</a>
-						</h2>
-						</div>
-						<div>
-							<h2>23</h2>										
-						</div>
-														
-						<br>
-						<div>							
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+						<div class="col-md-3">	
+							<a href="#"><i class="rt-icon2-pin-alt" style="font-size: 35px;"></i></a>
 							<br>
-							<span>Favorita</span>
-						</div>
-						<div>
-							<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
-							<br>
-							<span>WhatsApp</span>
-						</div>
-						<div>
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
-							<br>
-							<span>120 Like</span>
-						</div>
-						<div>
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
-							<br>
-							<span>5 Km</span>
-						</div>
+							<span class="bold">5 Km</span>
+						</div><br>
+						<div style="font-size: 15px;">
+							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>GOLD</b><br>
+							<span class="bold">Ciudad: </span>Santiago, Chile
+						</div>		
+					
 					</div>
 				</div>
 			</div>
@@ -110,47 +103,42 @@
 				<div class="item-media">
 					<img src="<?php echo base_url();?>tool/images/top_carousel_03.jpg" alt="">
 					<div class="media-links">
-						<a class="abs-link" title="" href="model.html"></a>
+						<a class="abs-link" title="" href="<?php echo base_url();?>home/perfil"></a>
 					</div>
 				</div>
 				<div class="item-content text-center grey gradient_bg_goriz">
 					<div class="bg_overlay"></div>
-					<div class="model-parameters">
+					<div class="model-parameters">					
+						<div style="font-size: 35px;"><br>
+								<a href="<?php echo base_url();?>home/perfil">Juanita | <b>23</b></a>
+							
+						</div>	<br>					
+						<div class="col-md-3">							
+							<a href="#"><i class="rt-icon2-eye3" style="font-size: 35px;"></i></a>
+							<br>
+							<span class="bold">350</span>
+						</div>
+						<div class="col-md-3">	
+							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
+							<br>
+							<span class="bold">5,6</span>
+						</div>
+						<div class="col-md-3">	
+							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
+							<br>
+							<span class="bold">WSP</span>
+						</div>
 
-															
-						<div>
-							<img src="img/flag_icons/png/cl.png" align="left">
-						</div>
-						<div>
-							<h2>
-							<a href="<?php echo base_url();?>home/perfil">Juanita Stacy</a>
-						</h2>
-						</div>
-						<div>
-							<h2>23</h2>										
-						</div>
-														
-						<br>
-						<div>							
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+						<div class="col-md-3">	
+							<a href="#"><i class="rt-icon2-pin-alt" style="font-size: 35px;"></i></a>
 							<br>
-							<span>Favorita</span>
-						</div>
-						<div>
-							<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
-							<br>
-							<span>WhatsApp</span>
-						</div>
-						<div>
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
-							<br>
-							<span>120 Like</span>
-						</div>
-						<div>
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
-							<br>
-							<span>5 Km</span>
-						</div>
+							<span class="bold">5 Km</span>
+						</div><br>
+						<div style="font-size: 15px;">
+							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>GOLD</b><br>
+							<span class="bold">Ciudad: </span>Santiago, Chile
+						</div>		
+					
 					</div>
 				</div>
 			</div>
@@ -161,45 +149,42 @@
 				<div class="item-media">
 					<img src="<?php echo base_url();?>tool/images/top_carousel_04.jpg" alt="">
 					<div class="media-links">
-						<a class="abs-link" title="" href="model.html"></a>
+						<a class="abs-link" title="" href="<?php echo base_url();?>home/perfil"></a>
 					</div>
 				</div>
 				<div class="item-content text-center grey gradient_bg_goriz">
 					<div class="bg_overlay"></div>
-					<div class="model-parameters">								
-						<div>
-							<img src="<?php echo base_url();?>tool/img/flag_icons/png/cl.png" align="left">
-						</div>
-						<div>
-							<h2>
-							<a href="<?php echo base_url();?>home/perfil">Juanita Stacy</a>
-						</h2>
-						</div>
-						<div>
-							<h2>23</h2>										
-						</div>
-														
-						<br>
-						<div>							
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-star-o"></i></a>
+					<div class="model-parameters">					
+						<div style="font-size: 35px;"><br>
+								<a href="<?php echo base_url();?>home/perfil">Juanita | <b>23</b></a>
+							
+						</div>	<br>					
+						<div class="col-md-3">							
+							<a href="#"><i class="rt-icon2-eye3" style="font-size: 35px;"></i></a>
 							<br>
-							<span>Favorita</span>
+							<span class="bold">350</span>
 						</div>
-						<div>
-							<a href="https://api.whatsapp.com/send?phone=56912345678" class="social-icon border-icon rounded-icon soc-rt-icon2-heart"><i class="rt-icon2-whatsapp"></i></a>
+						<div class="col-md-3">	
+							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
 							<br>
-							<span>WhatsApp</span>
+							<span class="bold">5,6</span>
 						</div>
-						<div>
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-like"><i class="rt-icon2-like"></i></a>
+						<div class="col-md-3">	
+							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
 							<br>
-							<span>120 Like</span>
+							<span class="bold">WSP</span>
 						</div>
-						<div>
-							<a href="#" class="social-icon border-icon rounded-icon soc-rt-icon2-pin-alt"><i class="rt-icon2-pin-alt"></i></a>
+
+						<div class="col-md-3">	
+							<a href="#"><i class="rt-icon2-pin-alt" style="font-size: 35px;"></i></a>
 							<br>
-							<span>5 Km</span>
-						</div>
+							<span class="bold">5 Km</span>
+						</div><br>
+						<div style="font-size: 15px;">
+							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>GOLD</b><br>
+							<span class="bold">Ciudad: </span>Santiago, Chile
+						</div>		
+					
 					</div>
 				</div>
 			</div>
@@ -255,7 +240,7 @@
 				</div>
 				<div class="item-title text-center">
 					<h4>
-						<a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" src="<?php echo base_url();?>tool/images/models_portrait/0<?php echo $i;?>.jpg">Sonya Smith</a>
+						<a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" src="<?php echo base_url();?>tool/images/models_portrait/0<?php echo $i;?>.jpg">Sonya Smith</a>
 					</h4>
 				</div>
 			</div>
@@ -492,7 +477,7 @@
 							<div class="embed-responsive embed-responsive-3by2">
 								<a href="https://www.youtube.com/embed/mcixldqDIEQ" class="embed-placeholder">
 
-									<img src="images/gallery/16.jpg" alt="">
+									<img src="<?php echo base_url();?>tool/images/gallery/16.jpg" alt="">
 									<div class="media-links"></div>
 								</a>
 							</div>

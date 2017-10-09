@@ -1,5 +1,5 @@
 
-<?php echo form_open(null, array('name'=>'form'));?>
+
 <section class="ds ms section_padding_50">
 	<div class="col-sm-12" align="center">
 		<button type="button" class="theme_button inverse" data-toggle="modal" data-target="#myModal">Agregar Cliente</button>
@@ -9,7 +9,7 @@
 
 
 
-
+<?php echo form_open(null, array('name'=>'form'));?>
 <!-- Modal Agregar -->
 
   <div class="modal fade" id="myModal" role="dialog">
@@ -24,7 +24,7 @@
         	<div class="row">
         		<div class="col-sm-3">
         			<p><label>NOMBRE<span class="required"> *</span></label>
-					<input type="text"  size="30" value="" name="nombre" class="form-control" required placeholder="Nombre"></p>
+					<input type="text"  size="30" value="" name="nombre" class="form-control"  placeholder="Nombre"></p>
 
 					<p><label>NACIONALIDAD<span class="required"> *</span></label>
 					  <select type="text" name="nacionalidad" required class="form-control">
@@ -46,29 +46,29 @@
 					    <option>MORENA</option>
 					  </select>										
 					<p><label>EDAD<span class="required"> *</span></label>
-					<input type="number" min="18" max="55" value="" name="edad" required class="form-control" placeholder="Edad"></p>
+					<input type="number" min="18" max="55" value="" name="edad"  class="form-control" placeholder="Edad"></p>
         		</div>
 
         		<div class="col-sm-3">
 					<p><label>ESTATURAS<span class="required"> *</span></label>
-					<input type="text" size="30" value="" name="estatura" required class="form-control" placeholder="Estatura"></p>
+					<input type="text" size="30" value="" name="estatura"  class="form-control" placeholder="Estatura"></p>
 
 					<p><label>MEDIDAS<span class="required"> *</span></label>
-					<input type="text" size="30" value="" name="medidas" required class="form-control" placeholder="Medidas"></p>
+					<input type="text" size="30" value="" name="medidas"  class="form-control" placeholder="Medidas"></p>
 
 					<p><label>PESO<span class="required"> *</span></label>
-					<input type="number" min="30" max="100" value="" name="peso" required class="form-control" placeholder="Peso"></p>
+					<input type="number" min="30" max="100" value="" name="peso"  class="form-control" placeholder="Peso"></p>
 
 					<p><label>TELEFONO<span class="required"> *</span></label>
-					<input type="text" size="30" value="" name="telefono" required class="form-control" placeholder="Teléfono"></p>
+					<input type="text" size="30" value="" name="telefono"  class="form-control" placeholder="Teléfono"></p>
         		</div>
 
         		<div class="col-sm-3">
         			<p><label>DIRECCION<span class="required"> *</span></label>
-					<input type="text" size="30" value="" name="direccion" required class="form-control" placeholder="Dirección"></p>
+					<input type="text" size="30" value="" name="direccion"  class="form-control" placeholder="Dirección"></p>
 
 					<p><label>CIUDAD<span class="required"> *</span></label>
-					<select type="text" name="ciudad" required class="form-control">
+					<select type="text" name="ciudad"  class="form-control">
 					    <option value="Arica">Arica</option>
 					    <option value="Antofagasta">Antofagasta</option>
 					    <option value="Calama">Calama</option>
@@ -76,21 +76,21 @@
 					 </select>
 
 					<p><label>RESEÑA<span class="required"> *</span></label>
-					<input type="text" size="30" value="" name="resena" required class="form-control" placeholder="Reseña"></p>
+					<input type="text" size="30" value="" name="resena"  class="form-control" placeholder="Reseña"></p>
 
 					<p><label>VALOR<span class="required"> *</span></label>
-					<input type="number" size="30" value="" name="valor" required class="form-control" placeholder="Valor"></p>	
+					<input type="number" size="30" value="" name="valor"  class="form-control" placeholder="Valor"></p>	
         		</div>
 
         		<div class="col-sm-3">
         			<p><label>HORA ENTRADAS<span class="required"> *</span></label>
-					<input type="time" value="" name="entrada" required class="form-control" placeholder="Hora de Entrada"></p>
+					<input type="time" value="" name="entrada"  class="form-control" placeholder="Hora de Entrada"></p>
 
 					<p><label>HORA SALIDA<span class="required"> *</span></label>
-					<input type="time" value="" name="salida" required class="form-control" placeholder="Hora de Salida"></p>
+					<input type="time" value="" name="salida"  class="form-control" placeholder="Hora de Salida"></p>
 
 					<p><label>CLASIFICACION<span class="required"> *</span></label>
-					<select type="text" name="clasificacion" required class="form-control">
+					<select type="text" name="clasificacion"  class="form-control">
 					    <option>VIP</option>
 					    <option>GOLDEN</option>
 					    <option>PLATINUM</option>
@@ -98,7 +98,7 @@
 					 </select>
 
 					<p><label>% RETOQUE FOTOS<span class="required"> *</span></label>
-					<input type="number" min="0" max="50" value="" name="retoque" required class="form-control" placeholder="Retoque"></p>
+					<input type="number" min="0" max="50" value="" name="retoque"  class="form-control" placeholder="Retoque"></p>
         		</div>
         	</div>
 
@@ -108,14 +108,14 @@
 
         <div class="modal-footer">
           <button type="button" class="theme_button inverse" data-dismiss="modal">Cerrar</button>
-          <button type="submit" name="agregar" class="theme_button color1">Agregar</button>
+          <input type="submit" name="agregar" value="agregar" class="theme_button color1">
         </div>
       </div>
     </div>
   </div>
 
 <!-- / Modal Agregar -->
-
+<?php echo form_close();?>	
 
 
 <!-- Tabla Clientes -->		
@@ -154,7 +154,7 @@
 				</tr>
 
 
-
+<?php echo form_open(null, array('name'=>'form'));?>
 <!-- Modal Agregar -->
 
   <div class="modal fade" id="myModal<?php echo $datos->ID;?>" role="dialog">
@@ -168,11 +168,12 @@
         <div class="modal-body">
         	<div class="row">
         		<div class="col-sm-3">
+        			<input type="text" value="<?php echo $datos->ID;?>" hidden name="id">
         			<p><label>NOMBRE<span class="required"> *</span></label>
-					<input type="text" size="30" value="<?php echo $datos->NOMBRE;?>" name="nombre2" required class="form-control" placeholder="Nombre"></p>
+					<input type="text" size="30" value="<?php echo $datos->NOMBRE;?>" name="nombre" required class="form-control" placeholder="Nombre"></p>
 
 					<p><label>NACIONALIDAD<span class="required"> *</span></label>
-					  <select type="text" name="nacionalidad2" required class="form-control">
+					  <select type="text" name="nacionalidad" required class="form-control">
 					  	<option value="<?php echo $datos->NACIONALIDAD;?>" selected><?php echo $datos->NACIONALIDAD;?></option>
 					  	<option value="Argentina">Argentina</option>
 					  	<option value="Boliviana">Boliviana</option>
@@ -186,36 +187,36 @@
 					  </select>
 
 					<p><label>RAZA<span class="required"> *</span></label>
-					  <select type="text" name="raza2" required class="form-control">
+					  <select type="text" name="raza" required class="form-control">
 					  	<option value="<?php echo $datos->RAZA;?>" selected><?php echo $datos->RAZA;?></option>
 					    <option>CAUCÁSICA</option>
 					    <option>TRIGUEÑA</option>
 					    <option>MORENA</option>
 					  </select>										
 					<p><label>EDAD<span class="required"> *</span></label>
-					<input type="number" min="18" max="55" value="<?php echo $datos->EDAD;?>" name="edad2" required class="form-control" placeholder="Edad"></p>
+					<input type="number" min="18" max="55" value="<?php echo $datos->EDAD;?>" name="edad" required class="form-control" placeholder="Edad"></p>
         		</div>
 
         		<div class="col-sm-3">
 					<p><label>ESTATURA<span class="required"> *</span></label>
-					<input type="text" size="30" value="<?php echo $datos->ESTATURA;?>" name="estatura2" required class="form-control" placeholder="Estatura"></p>
+					<input type="text" size="30" value="<?php echo $datos->ESTATURA;?>" name="estatura" required class="form-control" placeholder="Estatura"></p>
 
 					<p><label>MEDIDAS<span class="required"> *</span></label>
-					<input type="text" size="30" value="<?php echo $datos->MEDIDAS;?>" name="medidas2" required class="form-control" placeholder="Medidas"></p>
+					<input type="text" size="30" value="<?php echo $datos->MEDIDAS;?>" name="medidas" required class="form-control" placeholder="Medidas"></p>
 
 					<p><label>PESO<span class="required"> *</span></label>
-					<input type="number" min="30" max="100" value="<?php echo $datos->PESO;?>" name="peso2" required class="form-control" placeholder="Peso"></p>
+					<input type="number" min="30" max="100" value="<?php echo $datos->PESO;?>" name="peso" required class="form-control" placeholder="Peso"></p>
 
 					<p><label>TELEFONO<span class="required"> *</span></label>
-					<input type="text" size="30" value="<?php echo $datos->TELEFONO;?>" name="telefono2" required class="form-control" placeholder="Teléfono"></p>
+					<input type="text" size="30" value="<?php echo $datos->TELEFONO;?>" name="telefono" required class="form-control" placeholder="Teléfono"></p>
         		</div>
 
         		<div class="col-sm-3">
         			<p><label>DIRECCION<span class="required"> *</span></label>
-					<input type="text"  size="30" value="<?php echo $datos->DIRECCION;?>" name="direccion2" required class="form-control" placeholder="Dirección"></p>
+					<input type="text"  size="30" value="<?php echo $datos->DIRECCION;?>" name="direccion" required class="form-control" placeholder="Dirección"></p>
 
 					<p><label>CIUDAD<span class="required"> *</span></label>
-					<select type="text"  name="ciudad2" required class="form-control">
+					<select type="text"  name="ciudad" required class="form-control">
 						<option value="<?php echo $datos->CIUDAD;?>" selected><?php echo $datos->CIUDAD;?></option>
 					    <option value="Arica">Arica</option>
 					    <option value="Antofagasta">Antofagasta</option>
@@ -224,21 +225,21 @@
 					 </select>
 
 					<p><label>RESEÑA<span class="required"> *</span></label>
-					<input type="text" size="30" value="<?php echo $datos->RESENA;?>" name="resena2" required class="form-control" placeholder="Reseña"></p>
+					<input type="text" size="30" value="<?php echo $datos->RESENA;?>" name="resena" required class="form-control" placeholder="Reseña"></p>
 
 					<p><label>VALOR<span class="required"> *</span></label>
-					<input type="number"  size="30" value="<?php echo $datos->VALOR;?>" name="valor2" required class="form-control" placeholder="Valor"></p>	
+					<input type="number"  size="30" value="<?php echo $datos->VALOR;?>" name="valor" required class="form-control" placeholder="Valor"></p>	
         		</div>
 
         		<div class="col-sm-3">
         			<p><label>HORA ENTRADAS<span class="required"> *</span></label>
-					<input type="time"   value="<?php echo $datos->HORA_I;?>" name="entrada2" required class="form-control" placeholder="Hora de Entrada"></p>
+					<input type="time"   value="<?php echo $datos->HORA_I;?>" name="entrada" required class="form-control" placeholder="Hora de Entrada"></p>
 
 					<p><label>HORA SALIDA<span class="required"> *</span></label>
-					<input type="time" value="<?php echo $datos->HORA_F;?>" name="salida2" required class="form-control" placeholder="Hora de Salida"></p>
+					<input type="time" value="<?php echo $datos->HORA_F;?>" name="salida" required class="form-control" placeholder="Hora de Salida"></p>
 
 					<p><label>CLASIFICACION<span class="required"> *</span></label>
-					<select type="text" name="clasificacion2" required class="form-control">
+					<select type="text" name="clasificacion" required class="form-control">
 						<option value="<?php echo $datos->CLASIFICACION;?>" selected><?php echo $datos->CLASIFICACION;?></option>
 					    <option>VIP</option>
 					    <option>GOLDEN</option>
@@ -247,7 +248,7 @@
 					 </select>
 
 					<p><label>% RETOQUE FOTOS<span class="required"> *</span></label>
-					<input type="number"  min="0" max="50" value="<?php echo $datos->RETOQUE;?>" name="retoque2" required class="form-control" placeholder="Retoque"></p>
+					<input type="number"  min="0" max="50" value="<?php echo $datos->RETOQUE;?>" name="retoque" required class="form-control" placeholder="Retoque"></p>
         		</div>
         	</div>
 
@@ -257,14 +258,14 @@
 
         <div class="modal-footer">
           <button type="button" class="theme_button inverse" data-dismiss="modal">Cerrar</button>
-          <button type="submit" name="actualizar" class="theme_button color1">Actualizar</button>
+          <input type="submit" name="actualizar" value="actualizar" class="theme_button color1">
         </div>
       </div>
     </div>
   </div>
 
 <!-- / Modal Agregar -->
-
+<?php echo form_close();?>	
 
 
 
@@ -280,4 +281,4 @@
 
 </section>
 <!-- / Tabla Clientes -->	
-<?php echo form_close();?>	
+

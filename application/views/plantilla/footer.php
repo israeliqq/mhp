@@ -5,38 +5,39 @@
 				<div class="container">
 					<div class="row">
 
-						<div class="col-md-3 col-sm-6 to_animate">
+						<div class="col-md-3 col-sm-6">
 							<div class="widget widget_text">
 								<a href="./" class="logo logo_image bottommargin_10">
 									<h1>My
 										<span class="muellerhoff">HotPlace</span>
 									</h1>
-									<img src="images/logo.png" alt="">
+									<img src="<?php echo base_url();?>tool/images/logo.png" alt="">
 								</a>
 								<p>
-									Portal para mayores de 18 años. MyHotPlace no se responsabiliza por el servicio de las escorts.
+									El Portal MyHotPlace solo puede ser visualizado por mayores de 18 años.
+									Todas las fotografías expuestas en este sitio, son verificadas antes de su publicación, reservandose el derecho del mismo.
 								</p>
 							</div>
 						</div>
 
-						<div class="col-md-3 col-sm-6 to_animate dark_bg_color">
+						<div class="col-md-3 col-sm-6 dark_bg_color">
 							<div class="widget_text">
-								<h3 class="widget-title">Anunciate !</h3>
+								<h3 class="widget-title">Publica Aquí !</h3>
 								<h1 class="text-md-center">
 									<i class="rt-icon2-cloud-storage highlight"></i>
 								</h1>
-								<p class="text-md-center">Publica aqui tus avisos como escort, sexshop, moteles y delivery's. <br><br><a href="<?php echo base_url();?>home/contacto"" class="theme_button inverse">ANUNCIAR !</a></p>
+								<p class="text-md-center">Publica aqui tus avisos como escort, sexshop, moteles y delivery's. <br><br><a href="<?php echo base_url();?>home/contacto"" class="theme_button inverse">Publicar !</a></p>
 								
 							</div>
 						</div>
 
-						<div class="col-md-3 col-sm-6 to_animate">
+						<div class="col-md-3 col-sm-6">
 							<div class="widget_text">
 								<h3 class="widget-title">Contáctanos</h3>
 								<p>Tarapacá, Iquique, Chile</p>
 								<div class="border-paragraphs">
 									<p>
-										<i class="rt-icon2-device-phone highlight"></i> +56 9 3005 6534
+										<i class="rt-icon2-device-phone highlight"></i> +56 9 1234 5678
 									</p>
 									<p>
 										<i class="rt-icon2-globe-outline highlight"></i>
@@ -52,7 +53,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-3 col-sm-6 to_animate">
+						<div class="col-md-3 col-sm-6">
 							<div class="widget_text">
 								<h3 class="widget-title">Búscanos en:</h3>
 								<div class="media">
@@ -85,8 +86,10 @@
 
 						</div>
 					</div>
+					<h5 align="center">© MyHotPlace | Todos los derechos reservados | Chile, 2017</h5>
 				</div>
 </footer>
+
 
 		</div>
 		<!-- eof #box_wrapper -->

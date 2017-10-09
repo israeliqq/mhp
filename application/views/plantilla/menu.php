@@ -23,7 +23,7 @@
           <h1>My
             <span class="muellerhoff">HotPlace</span>
           </h1>
-          <img src="images/logo.png" alt="">
+          <img src="<?php echo base_url();?>tool/images/logo.png" alt="">
         </a>
       </div>
       <div class="col-md-6 text-center">
@@ -85,7 +85,7 @@
                     <li class="media">
                       <div class="media-left media-middle">
                         <a href="product-right.html">
-                          <img src="images/models_square/01.jpg" alt="">
+                          <img src="<?php echo base_url();?>tool/images/models_square/01.jpg" alt="">
                         </a>
                       </div>
                       <div class="media-body media-middle">
@@ -105,7 +105,7 @@
                     <li class="media">
                       <div class="media-left media-middle">
                         <a href="product-right.html">
-                          <img src="images/models_square/02.jpg" alt="">
+                          <img src="<?php echo base_url();?>tool/images/models_square/02.jpg" alt="">
                         </a>
                       </div>
 

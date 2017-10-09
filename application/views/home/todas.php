@@ -1,4 +1,4 @@
-<section id="comingsoon1" class="ds ms section_padding_top_80 section_padding_bottom_100">
+<section class="ds ms section_padding_top_80 section_padding_bottom_100">
 
 	<div class="row">
 		<div class="col-md-4 col-md-push-4 col-sm-6 col-sm-push-3 text-center">
@@ -21,12 +21,13 @@
 </section>
 
 
-<section class="ds ms section_padding_50">
+<section class="ds ms intro_section page_mainslider">
 
+<div class="row">
 <?php for ($i=0; $i < 24 ; $i++) { ?>
 
 
-<div class="col-sm-2">
+<div class="col-md-2">
 	<div class="thumbnail">
 		<img src="<?php echo base_url();?>tool/images/team/02.jpg" alt="">
 		<div class="caption">
@@ -44,6 +45,7 @@
 </div>
 
 <?php };?>
+</div>
 
 
 </section>

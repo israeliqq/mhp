@@ -18,6 +18,7 @@
 
   <script src="<?php echo base_url();?>tool/js/vendor/modernizr-2.6.2.min.js"></script>
 
+
 </head>
 
 <body>
@@ -32,5 +33,12 @@
 -->
 
 
+  <style type="text/css">
+    
 
+   body{
+
+          background-color: #0D0D0D;
+  }
+  </style>
 
