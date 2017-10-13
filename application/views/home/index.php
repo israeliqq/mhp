@@ -4,6 +4,7 @@
 </style>
 
 <section class="ds ms intro_section page_mainslider">
+
 	<div class="owl-carousel page_maincarousel" data-margin="0" data-nav="true" data-loop="true" data-items="4">
 
 		<div>
@@ -18,7 +19,7 @@
 					<div class="bg_overlay"></div>
 					<div class="model-parameters">					
 						<div style="font-size: 35px;"><br>
-								<a href="<?php echo base_url();?>home/perfil">Juanita | <b>23</b></a>
+								<a href="<?php echo base_url();?>home/perfil">Claudia | <b>23</b></a>
 							
 						</div>	<br>					
 						<div class="col-md-3">							
@@ -29,7 +30,7 @@
 						<div class="col-md-3">	
 							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
 							<br>
-							<span class="bold">5,6</span>
+							<span class="bold">5,0</span>
 						</div>
 						<div class="col-md-3">	
 							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
@@ -43,7 +44,7 @@
 							<span class="bold">5 Km</span>
 						</div><br>
 						<div style="font-size: 15px;">
-							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>GOLD</b><br>
+							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>VIP</b><br>
 							<span class="bold">Ciudad: </span>Santiago, Chile
 						</div>		
 					
@@ -64,7 +65,7 @@
 					<div class="bg_overlay"></div>
 					<div class="model-parameters">					
 						<div style="font-size: 35px;"><br>
-								<a href="<?php echo base_url();?>home/perfil">Juanita | <b>23</b></a>
+								<a href="<?php echo base_url();?>home/perfil">Daniela | <b>23</b></a>
 							
 						</div>	<br>					
 						<div class="col-md-3">							
@@ -75,12 +76,12 @@
 						<div class="col-md-3">	
 							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
 							<br>
-							<span class="bold">5,6</span>
+							<span class="bold">5,0</span>
 						</div>
 						<div class="col-md-3">	
 							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
 							<br>
-							<span class="bold">SMS</span>
+							<span class="bold">WSP</span>
 						</div>
 
 						<div class="col-md-3">	
@@ -89,7 +90,7 @@
 							<span class="bold">5 Km</span>
 						</div><br>
 						<div style="font-size: 15px;">
-							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>GOLD</b><br>
+							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>VIP</b><br>
 							<span class="bold">Ciudad: </span>Santiago, Chile
 						</div>		
 					
@@ -110,7 +111,7 @@
 					<div class="bg_overlay"></div>
 					<div class="model-parameters">					
 						<div style="font-size: 35px;"><br>
-								<a href="<?php echo base_url();?>home/perfil">Juanita | <b>23</b></a>
+								<a href="<?php echo base_url();?>home/perfil">Steicy | <b>23</b></a>
 							
 						</div>	<br>					
 						<div class="col-md-3">							
@@ -121,7 +122,7 @@
 						<div class="col-md-3">	
 							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
 							<br>
-							<span class="bold">5,6</span>
+							<span class="bold">5,0</span>
 						</div>
 						<div class="col-md-3">	
 							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
@@ -135,7 +136,7 @@
 							<span class="bold">5 Km</span>
 						</div><br>
 						<div style="font-size: 15px;">
-							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>GOLD</b><br>
+							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>VIP</b><br>
 							<span class="bold">Ciudad: </span>Santiago, Chile
 						</div>		
 					
@@ -156,7 +157,7 @@
 					<div class="bg_overlay"></div>
 					<div class="model-parameters">					
 						<div style="font-size: 35px;"><br>
-								<a href="<?php echo base_url();?>home/perfil">Juanita | <b>23</b></a>
+								<a href="<?php echo base_url();?>home/perfil">Roxana | <b>23</b></a>
 							
 						</div>	<br>					
 						<div class="col-md-3">							
@@ -167,7 +168,7 @@
 						<div class="col-md-3">	
 							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
 							<br>
-							<span class="bold">5,6</span>
+							<span class="bold">5,0</span>
 						</div>
 						<div class="col-md-3">	
 							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
@@ -181,7 +182,7 @@
 							<span class="bold">5 Km</span>
 						</div><br>
 						<div style="font-size: 15px;">
-							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>GOLD</b><br>
+							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>VIP</b><br>
 							<span class="bold">Ciudad: </span>Santiago, Chile
 						</div>		
 					
@@ -196,60 +197,37 @@
 
 
 <section id="todas" class="ds ms page_models models_portrait gorizontal_padding section_padding_70">
-	<div class="container-fluid">
-		<div class="row boxed-padding bottommargin_40">
-			<div class="col-lg-8">
-				<div class="filters isotope_filters inline-block margin_0">
-					<a href="#" data-filter="*" class="selected">Todas</a>
-					<a href="#" data-filter=".fashion">GOLDEN</a>
-					<a href="#" data-filter=".studio">SILVER</a>
-					<a href="#" data-filter=".fashion">PLATINUM</a>
+
+	<div class="col-lg-12" align="center">
+		<div class="filters isotope_filters margin_0">
+			<a href="#">IQUIQUE</a>
+			<a href="#">ANTOFAGASTA</a>
+			<a href="#">VALPARAISO</a>
+			<a href="#">SANTIAGO</a>
+		</div>
+	</div>
+
+
+		<?php for ($i=1; $i < 9 ; $i++) { ?>
+		<div class="col-lg-3 col-md-4 col-sm-6">
+			<div class="vertical-item content-absolute">
+				<div class="item-media">
+					<img src="<?php echo base_url();?>tool/images/models_portrait/0<?php echo $i;?>.jpg" alt="">
+					<a title="Cielo | VIP" href="<?php echo base_url();?>home/perfil">
+						<div class="media-links"></div>
+					</a>
 				</div>
 			</div>
-			<div class="col-lg-4 text-lg-right">
-				<form class="form-inline models-orderby">
-					<div class="form-group select-group">
-						<label class="sr-only" for="orderby">Ordenado Por:</label>
-						<select class="form-control orderby" name="orderby" id="orderby">
-							<option value="default" selected="">Ciudad</option>
-							<option value="name">Arica</option>
-							<option value="date">Iquique</option>
-							<option value="random">Antofagasta</option>
-						</select>
-						<i class="rt-icon2-chevron-thin-down form-button"></i>
-					</div>								
-				</form>
+			<div class="item-title text-center">
+				<h4>
+					<a class="p-view prettyPhoto" title="Cielo | VIP" href="<?php echo base_url();?>home/perfil">Cielo | VIP</a>
+				</h4>
 			</div>
 		</div>
-
-		<div class="isotope_container isotope row masonry-layout" data-filters=".isotope_filters">
-
-			<?php for ($i=1; $i < 9 ; $i++) { ?>
+		<?php };?>
 
 
-			<div class="isotope-item col-lg-3 col-md-4 col-sm-6 session">
-				<div class="vertical-item content-absolute">
-					<div class="item-media">
-						<img src="<?php echo base_url();?>tool/images/models_portrait/0<?php echo $i;?>.jpg" alt="">
-						<div class="media-links">
-							<div class="links-wrap">
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item-title text-center">
-					<h4>
-						<a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" src="<?php echo base_url();?>tool/images/models_portrait/0<?php echo $i;?>.jpg">Sonya Smith</a>
-					</h4>
-				</div>
-			</div>
-
-			<?php };?>
-
-		</div>
-
-		<!--PAGINACION -->
+		<!--PAGINACION 
 
 		<div class="row">
 			<div class="col-sm-12 text-center margin_0">
@@ -284,14 +262,14 @@
 				</ul>
 			</div>
 		</div>
-
 		<!--END PAGINACION -->
 
-	</div>
+	
 </section>
 
 
 <!--BANNER -->
+<!--
 <section class="ds section_padding_70 gorizontal_padding">
 	<div class="container-fluid">
 	<div class="flexslider banner-slider">
@@ -316,39 +294,14 @@
 </section>
 <!--END BANNER -->
 
-<section class="ds ms section_padding_top_80 columns_padding_0">
+<section class="ds ms section_padding_top_70 columns_padding_0">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12">
-
 				<div class="owl-carousel blog-carousel theme-owl-carousel" data-margin="30" data-nav="false" data-dots="true" data-center="true" data-loop="true" data-items="5" data-autoplay="false" data-responsive-xs="1" data-responsive-sm="2" data-responsive-md="2"
 				    data-responsive-lg="3" data-responsive-xlg="5">
 
-					<article class="vertical-item post format-video with_background">
 
-						<div class="entry-thumbnail">
-							<div class="embed-responsive embed-responsive-3by2">
-								<a href="https://www.youtube.com/embed/mcixldqDIEQ" class="embed-placeholder">
-
-									<img src="<?php echo base_url();?>tool/images/gallery/07.jpg" alt="">
-									<div class="media-links"></div>
-								</a>
-							</div>
-						</div>
-
-						<div class="item-content entry-content">
-							<h2 class="topmargin_0">
-								<a href="blog-single-right.html">Blog post (video)</a>
-							</h2>
-							<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
-								<a href="#">Session</a>
-							</div>
-							<p>
-								Aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.
-							</p>
-						</div>
-						<!-- .item-content.entry-content -->
-					</article>
 
 					<article class="vertical-item post format-slider with_background">
 
@@ -380,70 +333,19 @@
 
 						<div class="item-content entry-content">
 							<h2 class="topmargin_0">
-								<a href="blog-single-right.html">Blog post (slider)</a>
+								<a href="blog-single-right.html">Post (blog)</a>
 							</h2>
-							<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
-								<a href="#">Studio</a>,
-								<a href="#">Session</a>
-							</div>
 							<p>
-								No sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor a consetetur sadipscing elitr, sed diam.
+								<b><a href="#">42 Frases de las Escort</a></b>
+								<br>
+								He aqui las mejores frases escuchas por mas una escort.<br> Fuente : LaEstokada
 							</p>
 
 						</div>
 						<!-- .item-content.entry-content -->
 					</article>
 
-					<article class="vertical-item post format-standard with_background">
 
-						<div class="item-media entry-thumbnail">
-							<img src="<?php echo base_url();?>tool/images/gallery/19.jpg" alt="">
-							<div class="media-links">
-								<a class="abs-link" title="" href="blog-single-right.html"></a>
-							</div>
-						</div>
-
-						<div class="item-content entry-content">
-							<h2 class="topmargin_0">
-								<a href="blog-single-right.html">Blog post (image)</a>
-							</h2>
-							<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
-								<a href="#">Fashion</a>,
-								<a href="#">Studio</a>,
-								<a href="#">Session</a>
-							</div>
-							<p>
-								Eirmod tempor invidunt labodolore magna aliquyam eratediam voluptua veto accusam et justo duo.
-							</p>
-
-						</div>
-						<!-- .item-content.entry-content -->
-					</article>
-
-					<article class="vertical-item post format-standard with_background">
-
-						<div class="item-media entry-thumbnail">
-							<img src="<?php echo base_url();?>tool/images/gallery/04.jpg" alt="">
-							<div class="media-links">
-								<a class="abs-link" title="" href="blog-single-right.html"></a>
-							</div>
-						</div>
-
-						<div class="item-content entry-content">
-							<h2 class="topmargin_0">
-								<a href="blog-single-right.html">Blog post (image)</a>
-							</h2>
-							<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
-								<a href="#">Fashion</a>,
-								<a href="#">Session</a>
-							</div>
-							<p>
-								Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
-							</p>
-
-						</div>
-						<!-- .item-content.entry-content -->
-					</article>
 
 					<article class="vertical-item post format-standard with_background">
 
@@ -456,14 +358,10 @@
 
 						<div class="item-content entry-content">
 							<h2 class="topmargin_0">
-								<a href="blog-single-right.html">Blog post (image)</a>
+								<a href="blog-single-right.html">Masajista (Servicios)</a>
 							</h2>
-							<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
-								<a href="#">Fashion</a>,
-								<a href="#">Session</a>
-							</div>
 							<p>
-								Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+								Realizo masajes de relajación y descontracturante a domicilio o en mi box, atiendo de lunes a domingo de 8:00 a 21:00 horas, soy masoterapeuta (las horas deben ser agendadas anticipadamente).
 							</p>
 
 						</div>
@@ -485,13 +383,10 @@
 
 						<div class="item-content entry-content">
 							<h2 class="topmargin_0">
-								<a href="blog-single-right.html">Blog post (video)</a>
+								<a href="blog-single-right.html">Delivery (Tienda)</a>
 							</h2>
-							<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
-								<a href="#">Session</a>
-							</div>
 							<p>
-								Aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren.
+								Delivery (reparto o entrega) es una actividad parte de la función logística que tiene por finalidad colocar bienes, servicios, fondos o información directo en el lugar de consumo o uso (Al cliente final).
 							</p>
 						</div>
 						<!-- .item-content.entry-content -->
@@ -508,15 +403,10 @@
 
 						<div class="item-content entry-content">
 							<h2 class="topmargin_0">
-								<a href="blog-single-right.html">Blog post (image)</a>
+								<a href="blog-single-right.html">Motel (Locales)</a>
 							</h2>
-							<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
-								<a href="#">Fashion</a>,
-								<a href="#">Studio</a>,
-								<a href="#">Session</a>
-							</div>
 							<p>
-								Eirmod tempor invidunt labodolore magna aliquyam eratediam voluptua veto accusam et justo duo.
+								Ambientes privados, Baño privado, Agua caliente, Cama matrimonial, Led 32",  Canales de Adulto, Wifi,  Estacionamiento privado, Música ambiental, Discreción y privacidad, Bebestibles y Snack.
 							</p>
 						</div>
 						<!-- .item-content.entry-content -->
@@ -533,14 +423,11 @@
 
 						<div class="item-content entry-content">
 							<h2 class="topmargin_0">
-								<a href="blog-single-right.html">Blog post (image)</a>
+								<a href="blog-single-right.html">Blog (post)</a>
 							</h2>
-							<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
-								<a href="#">Fashion</a>,
-								<a href="#">Session</a>
-							</div>
 							<p>
-								Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+								<b><a href="#">20 cosas que una escort no soporta de un cliente</a></b>
+								Muy buen material, conocer esta lista los puede salvar por más de una mala cara o peor aún, de una mala atención.
 							</p>
 						</div>
 						<!-- .item-content.entry-content -->
@@ -557,14 +444,10 @@
 
 						<div class="item-content entry-content">
 							<h2 class="topmargin_0">
-								<a href="blog-single-right.html">Blog post (image)</a>
+								<a href="blog-single-right.html">SexShop (Tienda)</a>
 							</h2>
-							<div class="highlight fontsize_12 text-uppercase bold bottommargin_25">
-								<a href="#">Fashion</a>,
-								<a href="#">Session</a>
-							</div>
 							<p>
-								Lorem ipsum dolamet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+								En nuestro Sex Shop queremos siempre tener los mejores productos para ti, lo cual en este caso tambien significa tener los mejores precios y promociones.
 							</p>
 						</div>
 						<!-- .item-content.entry-content -->
@@ -574,8 +457,4 @@
 			</div>
 		</div>
 	</div>
-</section>
-
-
-<section class="ds section_padding_70">
 </section>

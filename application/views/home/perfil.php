@@ -172,16 +172,50 @@
 						<h2>DATOS:</h2>
 						<br>
 						<div class="panel-group" id="accordion1">
+
+
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion1" href="#collapse1" style="font-size: 15px">
+										<a data-toggle="collapse" data-parent="#accordion1" href="#collapse0" style="font-size: 15px" >
 											<i class="rt-icon2-heart3 highlight" style="font-size: 25px"></i>
+											<b>CARACTERISTICAS</b>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse0" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="widget widget_tag_cloud">
+											<div class="tagcloud">
+												<a href="#" title="">Parejas hetero</a>
+												<a href="#" title="">Bailes eróticos</a>
+												<a href="#" title="">Besos</a>
+												<a href="#" title="">Disfraces</a>
+												<a href="#" title="">Dos hombres</a>
+												<a href="#" title="">Juguetes</a>
+												<a href="#" title="">Masaje tántrico</a>
+												<a href="#" title="">Eventos y cenas</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion1" href="#collapse1" class="collapsed">
+											<i class="rt-icon2-suitcase highlight" style="font-size: 20px"></i>
 											<b>SERVICIOS</b>
 										</a>
 									</h4>
 								</div>
-								<div id="collapse1" class="panel-collapse collapse in">
+								<div id="collapse1" class="panel-collapse collapse">
 									<div class="panel-body">
 										<div class="widget widget_tag_cloud">
 											<div class="tagcloud">

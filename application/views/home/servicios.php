@@ -10,7 +10,7 @@
 </section>
 
 <section class="ds ms intro_section page_mainslider">
-<?php for ($i=0; $i < 9 ; $i++) { ?>
+<?php for ($i=0; $i < 3 ; $i++) { ?>
 
 
 <div class="col-sm-4">
@@ -18,9 +18,9 @@
 		<img src="<?php echo base_url();?>tool/images/team/02.jpg" alt="">
 		<div class="caption">
 			<h3>
-				<a href="team-single.html">Mohamed Rahum</a>
+				<a href="team-single.html">SexShop</a>
 			</h3>
-			<p>SEO</p>
+			<p>TIENDA</p>
 			<p class="text-center social-icons">
 				<a class="social-icon soc-facebook" href="#" title="Facebook" data-toggle="tooltip"></a>
 				<a class="social-icon soc-twitter" href="#" title="Twitter" data-toggle="tooltip"></a>

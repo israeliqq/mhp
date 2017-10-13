@@ -1,4 +1,4 @@
-  <!-- search modal -->
+<!-- search modal -->
   <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
     <div class="widget widget_search">
       <form method="get" class="searchform form-inline" action="/">
@@ -9,6 +9,11 @@
       </form>
     </div>
   </div>
+<!-- END search modal -->
+
+
+
+
 
   <!-- wrappers for visual page editor and boxed version of template -->
   <div id="canvas">
@@ -21,7 +26,7 @@
       <div class="col-md-3 col-sm-6 text-center">
         <a href="./" class="logo logo_image">
           <h1>My
-            <span class="muellerhoff">HotPlace</span>
+            <span class="muellerhoff"><b>HotPlace</b></span>
           </h1>
           <img src="<?php echo base_url();?>tool/images/logo.png" alt="">
         </a>
@@ -35,24 +40,23 @@
             </li>
 
             <li>
-              <a href="#">Ver Todas</a>
+              <a href="#">Ciudad</a>
               <ul>
                 <li>
-                  <a href="<?php echo base_url();?>home/todas">Arica</a>
+                  <a href="<?php echo base_url();?>home/todas">Iquique</a>
                 </li>
                 <li>
                   <a href="<?php echo base_url();?>home/todas">Antofagasta</a>
                 </li>
                 <li>
-                  <a href="<?php echo base_url();?>home/todas">Calama</a>
+                  <a href="<?php echo base_url();?>home/todas">Valparaiso</a>
                 </li>
                 <li>
-                  <a href="<?php echo base_url();?>home/todas">Iquique</a>
+                  <a href="<?php echo base_url();?>home/todas">Santiago</a>
                 </li>
               </ul>
             </li>
             <!-- eof pages -->
-
 
             <li>
               <a href="<?php echo base_url();?>home/mapa">Encuentrame</a>
@@ -69,6 +73,8 @@
           <span></span>
         </span>
       </div>
+
+      <!--
       <div class="col-sm-4 col-md-3 col-lg-2 ds ms">
         <ul class="inline-dropdown inline-block">
 
@@ -124,7 +130,7 @@
                       </div>
                     </li>
                   </ul>
-                  <!-- end product list -->
+
                   <br>
 
                   <p class="buttons">
@@ -173,6 +179,8 @@
           </li>
         </ul>
       </div>
+      -->
+
     </div>
   </div>
 </header>
