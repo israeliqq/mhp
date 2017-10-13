@@ -104,7 +104,7 @@ $db['default'] = array(
 	'password' => 'E1B]U)p25S',
 	'database' => 'santho_igni334',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => 'fu', //OJO AKI
+	'dbprefix' => '', //OJO AKI
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,

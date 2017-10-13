@@ -24,9 +24,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://mhp.app';
-
+//$config['base_url'] = 'http://myhotplace.com/mhp/';
 /*
-$config['base_url'] = 'http://myhotplace.com/mhp/';
+
 
 
 |--------------------------------------------------------------------------

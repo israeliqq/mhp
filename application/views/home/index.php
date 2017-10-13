@@ -25,15 +25,15 @@
 						<div class="col-md-3">							
 							<a href="#"><i class="rt-icon2-eye3" style="font-size: 35px;"></i></a>
 							<br>
-							<span class="bold">350</span>
+							<span class="bold">120</span>
 						</div>
 						<div class="col-md-3">	
-							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
+							<a href="#"><i class="rt-icon2-star-outline" style="font-size: 35px;"></i></a>
 							<br>
 							<span class="bold">5,0</span>
 						</div>
 						<div class="col-md-3">	
-							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
+							<a href="https://api.whatsapp.com/send?phone=56930038623&text=Hola%20NOMBRE%2C%20te%20contacto%20desde%20MyHotPlace.com%20estas%20disponible?"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
 							<br>
 							<span class="bold">WSP</span>
 						</div>
@@ -44,7 +44,7 @@
 							<span class="bold">5 Km</span>
 						</div><br>
 						<div style="font-size: 15px;">
-							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>VIP</b><br>
+							<span class="bold"><i class="fa fa-usd"></i> 450×675 </span>por Hora | <b>VIP</b><br>
 							<span class="bold">Ciudad: </span>Santiago, Chile
 						</div>		
 					
@@ -74,12 +74,12 @@
 							<span class="bold">350</span>
 						</div>
 						<div class="col-md-3">	
-							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
+							<a href="#"><i class="rt-icon2-star-outline" style="font-size: 35px;"></i></a>
 							<br>
 							<span class="bold">5,0</span>
 						</div>
 						<div class="col-md-3">	
-							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
+							<a href="https://api.whatsapp.com/send?phone=56930038623&text=Hola%20NOMBRE%2C%20te%20contacto%20desde%20MyHotPlace.com%20estas%20disponible?"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
 							<br>
 							<span class="bold">WSP</span>
 						</div>
@@ -120,12 +120,12 @@
 							<span class="bold">350</span>
 						</div>
 						<div class="col-md-3">	
-							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
+							<a href="#"><i class="rt-icon2-star-outline" style="font-size: 35px;"></i></a>
 							<br>
 							<span class="bold">5,0</span>
 						</div>
 						<div class="col-md-3">	
-							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
+							<a href="https://api.whatsapp.com/send?phone=56930038623&text=Hola%20NOMBRE%2C%20te%20contacto%20desde%20MyHotPlace.com%20estas%20disponible?"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
 							<br>
 							<span class="bold">WSP</span>
 						</div>
@@ -166,12 +166,12 @@
 							<span class="bold">350</span>
 						</div>
 						<div class="col-md-3">	
-							<a href="#"><i class="fa fa-star" style="font-size: 35px;"></i></a>
+							<a href="#"><i class="rt-icon2-star-outline" style="font-size: 35px;"></i></a>
 							<br>
 							<span class="bold">5,0</span>
 						</div>
 						<div class="col-md-3">	
-							<a href="#"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
+							<a href="https://api.whatsapp.com/send?phone=56930038623&text=Hola%20NOMBRE%2C%20te%20contacto%20desde%20MyHotPlace.com%20estas%20disponible?"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
 							<br>
 							<span class="bold">WSP</span>
 						</div>
@@ -220,7 +220,7 @@
 			</div>
 			<div class="item-title text-center">
 				<h4>
-					<a class="p-view prettyPhoto" title="Cielo | VIP" href="<?php echo base_url();?>home/perfil">Cielo | VIP</a>
+					<a class="p-view prettyPhoto" title="Cielo | VIP" href="<?php echo base_url();?>home/perfil">Cielo | 650 × 975</a>
 				</h4>
 			</div>
 		</div>
@@ -264,12 +264,10 @@
 		</div>
 		<!--END PAGINACION -->
 
-	
 </section>
 
 
-<!--BANNER -->
-<!--
+
 <section class="ds section_padding_70 gorizontal_padding">
 	<div class="container-fluid">
 	<div class="flexslider banner-slider">
@@ -292,7 +290,8 @@
 	</div>
 	</div>
 </section>
-<!--END BANNER -->
+
+
 
 <section class="ds ms section_padding_top_70 columns_padding_0">
 	<div class="container-fluid">
@@ -333,7 +332,7 @@
 
 						<div class="item-content entry-content">
 							<h2 class="topmargin_0">
-								<a href="blog-single-right.html">Post (blog)</a>
+								<a href="blog-single-right.html">Post (blog) 1170 × 780</a>
 							</h2>
 							<p>
 								<b><a href="#">42 Frases de las Escort</a></b>

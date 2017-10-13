@@ -4,13 +4,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5 col-md-push-7">
+
 				<div class="vertical-item with_background models_square">
-					<div class="item-media">
-						<img src="<?php echo base_url();?>tool/images/models_square/17.jpg" alt="">
+					<div id="gallery-owl-carousel" class="owl-carousel" data-dots="false" data-items="1" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-responsive-xs="1">
+						<div class="item-media">
+							<img src="http://myhotplace.com/mhp/tool/images/models_square/17.jpg" alt="">
+						</div>
+						<div class="item-media">
+							<img src="http://myhotplace.com/mhp/tool/images/models_square/17.jpg" alt="">
+						</div>
 					</div>
+
 					<div class="model-parameters" align="center">
 						<div>
-							<img src="<?php echo base_url();?>tool/img/flag_icons/png/cl.png" align="left">
+							<img src="http://myhotplace.com/mhp/tool/img/flag_icons/png/cl.png" align="left">
 						</div>
 						<div>
 							<h2>CIELO | 23 Años<h2>
@@ -26,7 +33,7 @@
 						<div class="text-center">
 							<a href="#" class="social-icon big-icon color-bg-icon soc-rosa">
 								<i class="rt-icon2-location2"></i>
-								<span class="counter" data-from="0" data-to="120" data-speed="1500">0</span>
+								<span class="counter" data-from="0" data-to="12" data-speed="1500">0</span>
 								<span>Kms</span>
 							</a>
 							<a href="#" class="social-icon big-icon color-bg-icon soc-rosa">
@@ -36,7 +43,7 @@
 							</a>
 							<a href="#" class="social-icon big-icon color-bg-icon soc-rosa">
 								<i class="rt-icon2-star"></i>
-								<span class="counter" data-from="0" data-to="120" data-speed="1500">0</span>
+								<span class="counter" data-from="0" data-to="5" data-speed="1500">0</span>
 								<span>Calificación</span>
 							</a>
 
@@ -52,7 +59,7 @@
 							</div>
 							
 							<div class="col-sm-6 text-md-left">
-								<h4 class="text-md-left">+ 56 9 12345678</h4>
+								<h4 class="text-md-left">1170 × 1170</h4>
 								<p> Enviar Whatsapp</p>
 							</div>
 						</div>
@@ -68,7 +75,7 @@
 							</div>
 							<div class="col-sm-6 text-md-left">
 								<h4 class="text-md-left">Iquique</h4>
-								<p> a 7 Km de ti</p>
+								<p> a 12 Km de ti</p>
 							</div>
 						</div>
 					</div>
