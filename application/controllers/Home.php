@@ -6,9 +6,6 @@ class Home extends CI_Controller {
 	public function perfil($id){
 		$escort = $this->escort_model->GetEscortID($id);
         $fotos = $this->escort_model->GetFotos($id);
-        //$servicios = $this->escort_model->GetServicios($id);
-        //$tag = $this->escort_model->GetTag($id);
-
 		$this->load->view('plantilla/header');
 		$this->load->view('plantilla/menu');
 		$this->load->view('home/perfil',compact('escort','fotos'));
@@ -17,9 +14,10 @@ class Home extends CI_Controller {
 
 
 	public function index(){
+		$escort = $this->escort_model->GetEscort();
 		$this->load->view('plantilla/header');
 		$this->load->view('plantilla/menu');
-		$this->load->view('home/index');
+		$this->load->view('home/index',compact('escort'));
 		$this->load->view('plantilla/footer');
 	}
 

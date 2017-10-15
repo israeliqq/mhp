@@ -9,7 +9,7 @@ class escort_model extends CI_Model
 	//TABLA ESCORT
 	public function GetEscort()
 	{
-		$sql = "SELECT * FROM `escort`";
+		$sql = "SELECT E.*, F.RUTA FROM escort E, foto F WHERE E.ID = F.FK_ESCORT AND F.PRIORIDAD = 2";
 		return $this->db->query($sql)->result();
 	}
 

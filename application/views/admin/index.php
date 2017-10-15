@@ -29,6 +29,7 @@
 					  <select type="text" name="nacionalidad" required class="form-control">
 					  	<option value="Argentina">Argentina</option>
 					  	<option value="Boliviana">Boliviana</option>
+					  	<option value="Boliviana">Brasileña</option>
 					    <option value="Chilena">Chilena</option>
 					    <option value="Colombiana">Colombiana</option>
 					    <option value="Cubana">Cubana</option>

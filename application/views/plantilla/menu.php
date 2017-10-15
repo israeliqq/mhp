@@ -45,15 +45,6 @@
                 <li>
                   <a href="<?php echo base_url();?>home/todas">Iquique</a>
                 </li>
-                <li>
-                  <a href="<?php echo base_url();?>home/todas">Antofagasta</a>
-                </li>
-                <li>
-                  <a href="<?php echo base_url();?>home/todas">Valparaiso</a>
-                </li>
-                <li>
-                  <a href="<?php echo base_url();?>home/todas">Santiago</a>
-                </li>
               </ul>
             </li>
             <!-- eof pages -->

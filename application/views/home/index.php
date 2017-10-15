@@ -3,19 +3,23 @@
 
 	<div class="owl-carousel page_maincarousel" data-margin="0" data-nav="true" data-loop="true" data-items="4">
 
+		<?php foreach($escort as $dato){ ?>
+
+
 		<div>
 			<div class="vertical-item maincarousel-item content-absolute cs">
 				<div class="item-media">
-					<img src="<?php echo base_url();?>tool/images/top_carousel_01.jpg" alt="">
+					<img src="<?php echo base_url();?>tool/fotos/<?php echo $dato->RUTA;?>" alt="<?php echo $dato->NOMBRE; ?> ">
 					<div class="media-links">
-						<a class="abs-link" title="" href="<?php echo base_url();?>home/perfil"></a>
+						<a class="abs-link" title="" href="<?php echo base_url();?>home/perfil/<?php echo $dato->ID;?>"></a>
 					</div>
 				</div>
 				<div class="item-content text-center grey gradient_bg_goriz">
 					<div class="bg_overlay"></div>
 					<div class="model-parameters">					
-						<div style="font-size: 35px;"><br>
-								<a href="<?php echo base_url();?>home/perfil">Claudia | <b>23</b></a>
+						<div style="font-size: 25px;"><br>
+								<a href="<?php echo base_url();?>home/perfil"><?php echo $dato->NOMBRE; ?> | <b>
+									<?php echo $dato->EDAD; ?> </b></a>
 							
 						</div>	<br>					
 						<div class="col-md-3">							
@@ -29,7 +33,9 @@
 							<span class="bold">5,0</span>
 						</div>
 						<div class="col-md-3">	
-							<a href="https://api.whatsapp.com/send?phone=56930038623&text=Hola%20NOMBRE%2C%20te%20contacto%20desde%20MyHotPlace.com%20estas%20disponible?"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
+							<a href="https://api.whatsapp.com/send?phone=<?php echo $dato->TELEFONO;?>&text=Hola%20<?php echo $dato->NOMBRE;?>%2C%20te%20contacto%20desde%20MyHotPlace.com%20estas%20disponible?">
+								<i class="rt-icon2-whatsapp" style="font-size: 35px;"></i>
+							</a>
 							<br>
 							<span class="bold">WSP</span>
 						</div>
@@ -40,8 +46,8 @@
 							<span class="bold">5 Km</span>
 						</div><br>
 						<div style="font-size: 15px;">
-							<span class="bold"><i class="fa fa-usd"></i> 450×675 </span>por Hora | <b>VIP</b><br>
-							<span class="bold">Ciudad: </span>Santiago, Chile
+							<span class="bold"><i class="fa fa-usd"></i> <?php echo number_format($dato->VALOR);?>  </span>por Hora | <b><?php echo $dato->CLASIFICACION;?></b><br>
+							<span class="bold">Ciudad: </span><?php echo $dato->CIUDAD;?> 
 						</div>		
 					
 					</div>
@@ -49,143 +55,14 @@
 			</div>
 		</div>
 
-		<div>
-			<div class="vertical-item maincarousel-item content-absolute cs">
-				<div class="item-media">
-					<img src="<?php echo base_url();?>tool/images/top_carousel_02.jpg" alt="">
-					<div class="media-links">
-						<a class="abs-link" title="" href="<?php echo base_url();?>home/perfil"></a>
-					</div>
-				</div>
-				<div class="item-content text-center grey gradient_bg_goriz">
-					<div class="bg_overlay"></div>
-					<div class="model-parameters">					
-						<div style="font-size: 35px;"><br>
-								<a href="<?php echo base_url();?>home/perfil">Daniela | <b>23</b></a>
-							
-						</div>	<br>					
-						<div class="col-md-3">							
-							<a href="#"><i class="rt-icon2-eye3" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">350</span>
-						</div>
-						<div class="col-md-3">	
-							<a href="#"><i class="rt-icon2-star-outline" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">5,0</span>
-						</div>
-						<div class="col-md-3">	
-							<a href="https://api.whatsapp.com/send?phone=56930038623&text=Hola%20NOMBRE%2C%20te%20contacto%20desde%20MyHotPlace.com%20estas%20disponible?"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">WSP</span>
-						</div>
 
-						<div class="col-md-3">	
-							<a href="#"><i class="rt-icon2-pin-alt" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">5 Km</span>
-						</div><br>
-						<div style="font-size: 15px;">
-							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>VIP</b><br>
-							<span class="bold">Ciudad: </span>Santiago, Chile
-						</div>		
-					
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div>
-			<div class="vertical-item maincarousel-item content-absolute cs">
-				<div class="item-media">
-					<img src="<?php echo base_url();?>tool/images/top_carousel_03.jpg" alt="">
-					<div class="media-links">
-						<a class="abs-link" title="" href="<?php echo base_url();?>home/perfil"></a>
-					</div>
-				</div>
-				<div class="item-content text-center grey gradient_bg_goriz">
-					<div class="bg_overlay"></div>
-					<div class="model-parameters">					
-						<div style="font-size: 35px;"><br>
-								<a href="<?php echo base_url();?>home/perfil">Steicy | <b>23</b></a>
-							
-						</div>	<br>					
-						<div class="col-md-3">							
-							<a href="#"><i class="rt-icon2-eye3" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">350</span>
-						</div>
-						<div class="col-md-3">	
-							<a href="#"><i class="rt-icon2-star-outline" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">5,0</span>
-						</div>
-						<div class="col-md-3">	
-							<a href="https://api.whatsapp.com/send?phone=56930038623&text=Hola%20NOMBRE%2C%20te%20contacto%20desde%20MyHotPlace.com%20estas%20disponible?"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">WSP</span>
-						</div>
 
-						<div class="col-md-3">	
-							<a href="#"><i class="rt-icon2-pin-alt" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">5 Km</span>
-						</div><br>
-						<div style="font-size: 15px;">
-							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>VIP</b><br>
-							<span class="bold">Ciudad: </span>Santiago, Chile
-						</div>		
-					
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php } ?>
 
-		<div>
-			<div class="vertical-item maincarousel-item content-absolute cs">
-				<div class="item-media">
-					<img src="<?php echo base_url();?>tool/images/top_carousel_04.jpg" alt="">
-					<div class="media-links">
-						<a class="abs-link" title="" href="<?php echo base_url();?>home/perfil"></a>
-					</div>
-				</div>
-				<div class="item-content text-center grey gradient_bg_goriz">
-					<div class="bg_overlay"></div>
-					<div class="model-parameters">					
-						<div style="font-size: 35px;"><br>
-								<a href="<?php echo base_url();?>home/perfil">Roxana | <b>23</b></a>
-							
-						</div>	<br>					
-						<div class="col-md-3">							
-							<a href="#"><i class="rt-icon2-eye3" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">350</span>
-						</div>
-						<div class="col-md-3">	
-							<a href="#"><i class="rt-icon2-star-outline" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">5,0</span>
-						</div>
-						<div class="col-md-3">	
-							<a href="https://api.whatsapp.com/send?phone=56930038623&text=Hola%20NOMBRE%2C%20te%20contacto%20desde%20MyHotPlace.com%20estas%20disponible?"><i class="rt-icon2-whatsapp" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">WSP</span>
-						</div>
 
-						<div class="col-md-3">	
-							<a href="#"><i class="rt-icon2-pin-alt" style="font-size: 35px;"></i></a>
-							<br>
-							<span class="bold">5 Km</span>
-						</div><br>
-						<div style="font-size: 15px;">
-							<span class="bold"><i class="fa fa-usd"></i> 60.000 </span>por Hora | <b>VIP</b><br>
-							<span class="bold">Ciudad: </span>Santiago, Chile
-						</div>		
-					
-					</div>
-				</div>
-			</div>
-		</div>
+
+
 
 	</div>
 </section>
@@ -196,26 +73,24 @@
 	<div class="col-lg-12" align="center">
 		<div class="filters isotope_filters margin_0">
 			<a href="#">IQUIQUE</a>
-			<a href="#">ANTOFAGASTA</a>
-			<a href="#">VALPARAISO</a>
-			<a href="#">SANTIAGO</a>
 		</div>
 	</div>
 
 
-		<?php for ($i=1; $i < 9 ; $i++) { ?>
+		<?php foreach($escort as $dato){ ?>
+
 		<div class="col-lg-3 col-md-4 col-sm-6">
 			<div class="vertical-item content-absolute">
 				<div class="item-media">
-					<img src="<?php echo base_url();?>tool/images/models_portrait/0<?php echo $i;?>.jpg" alt="">
-					<a title="Cielo | VIP" href="<?php echo base_url();?>home/perfil">
+					<img src="<?php echo base_url();?>tool/fotos/<?php echo $dato->RUTA;?>" alt="<?php echo $dato->NOMBRE;?>">
+					<a title="Cielo | VIP" href="<?php echo base_url();?>home/perfil/<?php echo $dato->ID;?>">
 						<div class="media-links"></div>
 					</a>
 				</div>
 			</div>
 			<div class="item-title text-center">
 				<h4>
-					<a class="p-view prettyPhoto" title="Cielo | VIP" href="<?php echo base_url();?>home/perfil">Cielo | 650 × 975</a>
+					<a class="p-view prettyPhoto" title="Cielo | VIP" href="<?php echo base_url();?>home/perfil/<?php echo $dato->ID;?>"><?php echo $dato->NOMBRE;?> | <?php echo $dato->EDAD;?></a>
 				</h4>
 			</div>
 		</div>

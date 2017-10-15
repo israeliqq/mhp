@@ -56,7 +56,24 @@
 					</div>
 					<hr>
 					<div class="teaser table_section">
-						<a href="https://api.whatsapp.com/send?phone=<?php echo $escort->TELEFONO; ?>&text=Hola%2C%20te%20contacto%20desde%20MyHotPlace.com">
+						<a href="tel:+<?php echo $escort->TELEFONO;?>">
+						<div class="row">
+							<div class="col-sm-2"></div>
+							<div class="col-sm-1 text-center">
+									<h1><i class="rt-icon2-phone highlight"></i><h1>
+							</div>
+							
+							<div class="col-sm-6 text-md-left">
+								<h4 class="text-md-left">+<?php echo $escort->TELEFONO;?></h4>
+								<p> Llamar</p>
+							</div>
+						</div>
+						</a>
+					</div>
+					<hr>
+
+					<div class="teaser table_section">
+						<a href="https://api.whatsapp.com/send?phone=<?php echo $escort->TELEFONO;?>&text=Hola%20<?php echo $escort->NOMBRE;?>%2C%20te%20contacto%20desde%20MyHotPlace.com%20estas%20disponible?">
 						<div class="row">
 							<div class="col-sm-2"></div>
 							<div class="col-sm-1 text-center">
@@ -73,6 +90,7 @@
 
 					<hr>
 					<div class="teaser table_section">
+						<a href="#">
 						<div class="row">
 							<div class="col-sm-2"></div>
 							<div class="col-sm-1 text-center">
@@ -80,9 +98,10 @@
 							</div>
 							<div class="col-sm-6 text-md-left">
 								<h4 class="text-md-left">Iquique</h4>
-								<p> a 12 Km de ti</p>
+								<p>Ubicar en el Mapa</p>
 							</div>
 						</div>
+						</a>
 					</div>
 					<hr>
 
@@ -93,7 +112,7 @@
 									<h1><i class="rt-icon2-banknote highlight"></i><h1>
 							</div>
 							<div class="col-sm-6 text-md-left">
-								<h4 class="text-md-left">$100.000</h4>
+								<h4 class="text-md-left">$ <?php echo number_format($escort->VALOR);?></h4>
 								<p class="text-md-left"> por 1 Hora</p>
 							</div>
 						</div>
@@ -155,8 +174,6 @@
 						<h2>DATOS:</h2>
 						<br>
 						<div class="panel-group" id="accordion1">
-
-
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
@@ -182,11 +199,6 @@
 								</div>
 							</div>
 
-
-
-
-
-
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
@@ -204,9 +216,7 @@
 												<a href="#" title="">Bailes eróticos</a>
 												<a href="#" title="">Besos</a>
 												<a href="#" title="">Disfraces</a>
-												<a href="#" title="">Dos hombres</a>
 												<a href="#" title="">Juguetes</a>
-												<a href="#" title="">Masaje tántrico</a>
 												<a href="#" title="">Eventos y cenas</a>
 											</div>
 										</div>
@@ -312,8 +322,6 @@
 									</div>
 								</div>
 							</div>
-						
-
 						</div>
 					</div>
 				</div>
