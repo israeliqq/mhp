@@ -1,7 +1,3 @@
-<style type="text/css">
-
-
-</style>
 
 <section class="ds ms intro_section page_mainslider">
 
@@ -195,8 +191,7 @@
 </section>
 
 
-
-<section id="todas" class="ds ms page_models models_portrait gorizontal_padding section_padding_70">
+<section class="ds ms intro_section page_mainslider">
 
 	<div class="col-lg-12" align="center">
 		<div class="filters isotope_filters margin_0">
@@ -263,39 +258,12 @@
 			</div>
 		</div>
 		<!--END PAGINACION -->
-
 </section>
 
 
-
-<section class="ds section_padding_70 gorizontal_padding">
+<section class="ds ms intro_section page_mainslider">
 	<div class="container-fluid">
-	<div class="flexslider banner-slider">
-		<ul class="slides">
-			<li class="gradient_bg_goriz">
-				<div class="bg_overlay"></div>
-				<img src="<?php echo base_url();?>tool/images/banner_slide_01.jpg" alt="">
-				<div class="media-links">
-					<a class="abs-link" href="#"></a>
-				</div>
-			</li>
-			<li class="gradient_bg_goriz">
-				<div class="bg_overlay"></div>
-				<img src="<?php echo base_url();?>tool/images/banner_slide_02.jpg" alt="">
-				<div class="media-links">
-					<a class="abs-link" href="#"></a>
-				</div>
-			</li>
-		</ul>
-	</div>
-	</div>
-</section>
 
-
-
-<section class="ds ms section_padding_top_70 columns_padding_0">
-	<div class="container-fluid">
-		<div class="row">
 			<div class="col-sm-12">
 				<div class="owl-carousel blog-carousel theme-owl-carousel" data-margin="30" data-nav="false" data-dots="true" data-center="true" data-loop="true" data-items="5" data-autoplay="false" data-responsive-xs="1" data-responsive-sm="2" data-responsive-md="2"
 				    data-responsive-lg="3" data-responsive-xlg="5">
@@ -337,7 +305,7 @@
 							<p>
 								<b><a href="#">42 Frases de las Escort</a></b>
 								<br>
-								He aqui las mejores frases escuchas por mas una escort.<br> Fuente : LaEstokada
+								He aqui las mejores frases escuchas por mas una escort.<br> Fuente : LaEstokada<br><br>
 							</p>
 
 						</div>
@@ -385,7 +353,7 @@
 								<a href="blog-single-right.html">Delivery (Tienda)</a>
 							</h2>
 							<p>
-								Delivery (reparto o entrega) es una actividad parte de la función logística que tiene por finalidad colocar bienes, servicios, fondos o información directo en el lugar de consumo o uso (Al cliente final).
+								Delivery (reparto o entrega) es una actividad parte de la función logística que tiene por finalidad colocar bienes, servicios, fondos o información directo en el lugar de consumo o uso (Al cliente final).<br><br>
 							</p>
 						</div>
 						<!-- .item-content.entry-content -->
@@ -405,7 +373,7 @@
 								<a href="blog-single-right.html">Motel (Locales)</a>
 							</h2>
 							<p>
-								Ambientes privados, Baño privado, Agua caliente, Cama matrimonial, Led 32",  Canales de Adulto, Wifi,  Estacionamiento privado, Música ambiental, Discreción y privacidad, Bebestibles y Snack.
+								Ambientes privados, Baño privado, Agua caliente, Cama matrimonial, Led 32",  Canales de Adulto, Wifi,  Estacionamiento privado, Música ambiental, Discreción y privacidad, Bebestibles y Snack.<br><br>
 							</p>
 						</div>
 						<!-- .item-content.entry-content -->
@@ -426,7 +394,7 @@
 							</h2>
 							<p>
 								<b><a href="#">20 cosas que una escort no soporta de un cliente</a></b>
-								Muy buen material, conocer esta lista los puede salvar por más de una mala cara o peor aún, de una mala atención.
+								Muy buen material, conocer esta lista los puede salvar por más de una mala cara o peor aún, de una mala atención.<br><br><br>
 							</p>
 						</div>
 						<!-- .item-content.entry-content -->
@@ -446,7 +414,7 @@
 								<a href="blog-single-right.html">SexShop (Tienda)</a>
 							</h2>
 							<p>
-								En nuestro Sex Shop queremos siempre tener los mejores productos para ti, lo cual en este caso tambien significa tener los mejores precios y promociones.
+								En nuestro Sex Shop queremos siempre tener los mejores productos para ti, lo cual en este caso tambien significa tener los mejores precios y promociones.<br><br><br>
 							</p>
 						</div>
 						<!-- .item-content.entry-content -->
@@ -454,6 +422,6 @@
 				</div>
 
 			</div>
-		</div>
+
 	</div>
 </section>

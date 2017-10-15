@@ -42,7 +42,7 @@ class Admin extends CI_Controller {
 
         if($this->input->post('actualizar',true))
         {
-             $id = $this->input->post('id',true);
+            $id = $this->input->post('id',true);
             $escort=array
             (
                 'NOMBRE'=>strtoupper($this->input->post('nombre',true)),
@@ -76,12 +76,70 @@ class Admin extends CI_Controller {
 		$this->load->view('plantilla/footer_adm');
 	}
 
-	public function delete()
+	public function delete($id)
 	{
-		$id = $this->input->get('id');
         $this->escort_model->DeleteEscort($id);
         redirect(base_url()."admin");
 	}
+
+    public function deletePhoto($idFoto, $id)
+    {
+        $this->escort_model->deletePhoto($idFoto);
+        redirect(base_url()."admin/info?id=".$id);
+    }
+
+
+
+    public function info()
+    {
+        $id = $this->input->get('id');
+        $escort = $this->escort_model->GetEscortID($id);
+
+        $fotos = $this->escort_model->GetFotos($id);
+
+        $this->load->view('plantilla/header');
+        $this->load->view('plantilla/menu_adm');
+        $this->load->view('admin/info',compact('id','escort','fotos'));
+        $this->load->view('plantilla/footer_adm');
+        
+    }
+
+
+    function upload()
+    {
+        $config['upload_path'] = "tool/fotos";
+        $config['encrypt_name'] = true;
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+        //$config['max_size'] = "50000";
+        //$config['max_width'] = "2000";
+        //$config['max_height'] = "2000";
+
+        $this->load->library('upload', $config);
+        
+        if(! $this->upload->do_upload('file'))
+        {
+            $error = array('error' => $this->upload->display_errors());
+            echo "ERROR: YA LA CAGASTE"; exit;
+            
+        }
+
+        $id = $this->input->post('id');
+        $ima = $this->upload->data();
+        $nombreimg = $ima['file_name'];
+
+        $foto=array
+        (
+            'PRIORIDAD'=>'1',
+            'RUTA'=>$nombreimg,
+            'MOSTRAR'=>1,
+            'FK_ESCORT'=>$id,
+        );
+
+        $this->escort_model->InsertFoto($foto);
+
+        redirect(base_url()."admin/info?id=".$id);
+    }
+
 
 
 }

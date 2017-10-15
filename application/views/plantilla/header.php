@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="<?php echo base_url();?>tool/css/main.css" id="color-switcher-link">
   <link rel="stylesheet" href="<?php echo base_url();?>tool/css/animations.css">
   <link rel="stylesheet" href="<?php echo base_url();?>tool/css/fonts.css">
-
   <script src="<?php echo base_url();?>tool/js/vendor/modernizr-2.6.2.min.js"></script>
+
 
 
 </head>

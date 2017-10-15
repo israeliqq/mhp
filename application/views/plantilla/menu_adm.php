@@ -16,7 +16,7 @@
           <h1>My
             <span class="muellerhoff">HotPlace</span>
           </h1>
-          <img src="images/logo.png" alt="">
+          <img src="<?php echo base_url();?>tool/images/logo.png" alt="">
         </a>
       </div>
       <div class="col-md-6 text-center">
@@ -28,19 +28,11 @@
             </li>
 
             <li class="page-scroll">
-              <a href="<?php echo base_url();?>home/todas">Todas</a>
+              <a href="<?php echo base_url();?>admin">Listar</a>
 
             </li>
             <!-- eof pages -->
 
-
-            <li>
-              <a href="<?php echo base_url();?>home/mapa">Ver mapa</a>
-            </li>
-
-            <li>
-              <a href="<?php echo base_url();?>home/servicios">Servicios</a>
-            </li>
 
           </ul>
         </nav>

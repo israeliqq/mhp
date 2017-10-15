@@ -7,21 +7,26 @@
 
 				<div class="vertical-item with_background models_square">
 					<div id="gallery-owl-carousel" class="owl-carousel" data-dots="false" data-items="1" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-responsive-xs="1">
-						<div class="item-media">
-							<img src="http://myhotplace.com/mhp/tool/images/models_square/17.jpg" alt="">
-						</div>
-						<div class="item-media">
-							<img src="http://myhotplace.com/mhp/tool/images/models_square/17.jpg" alt="">
-						</div>
+
+						<?php foreach($fotos as $foto){ ?>
+
+							<div class="item-media">
+								<img src="<?php echo base_url();?>tool/fotos/<?php echo $foto->RUTA?>" alt="">
+							</div>
+
+						<?php } ?>
+
 					</div>
 
 					<div class="model-parameters" align="center">
+
+						<!-- BANDERA
 						<div>
 							<img src="http://myhotplace.com/mhp/tool/img/flag_icons/png/cl.png" align="left">
 						</div>
+						-->
 						<div>
-							<h2>CIELO | 23 Años<h2>
-						
+							<h2><?php echo $escort->NOMBRE; ?> | <?php echo $escort->EDAD; ?> Años<h2>
 						</div>
 														
 						<br>
@@ -51,7 +56,7 @@
 					</div>
 					<hr>
 					<div class="teaser table_section">
-						<a href="https://api.whatsapp.com/send?phone=56930038623&text=Hola%2C%20deseo%20adquirir%20un%20soporte%20con%20ustedes">
+						<a href="https://api.whatsapp.com/send?phone=<?php echo $escort->TELEFONO; ?>&text=Hola%2C%20te%20contacto%20desde%20MyHotPlace.com">
 						<div class="row">
 							<div class="col-sm-2"></div>
 							<div class="col-sm-1 text-center">
@@ -59,7 +64,7 @@
 							</div>
 							
 							<div class="col-sm-6 text-md-left">
-								<h4 class="text-md-left">1170 × 1170</h4>
+								<h4 class="text-md-left">Whatsapp</h4>
 								<p> Enviar Whatsapp</p>
 							</div>
 						</div>
@@ -106,7 +111,7 @@
 			<div class="col-md-7 col-md-pull-5">
 				<h2 class="topmargin_0 bottommargin_30">SOBRE MI:</h2>
 				<p>
-					Hola, soy Valentina, una ardiente colombiana, con un cuerpo escultural, curvas que te apasionarán de principio a fin, soy puro fuego y seducción en cada encuentro íntimo. Una vez en la intimidad descubrirás que soy muy apasionada y servicial. Ven y disfruta de mi exquisita sensualidad.
+					<?php echo $escort->RESENA; ?>
 				</p>
 
 
@@ -115,57 +120,28 @@
 				<div class="columns_padding_5">
 					<h2 class="widget-title">GALERIA DE FOTOS:</h2>
 					<div class="isotope_container isotope row masonry-layout" data-filters=".isotope_filters">
-						<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 tests">
-							<div class="vertical-item gallery-item content-absolute text-center cs">
-								<div class="item-media">
-									<img src="<?php echo base_url();?>tool/images/models_square/01.jpg" alt="">
-									<div class="media-links">
-										<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="<?php echo base_url();?>tool/images/models_square/01.jpg"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 editorials">
-							<div class="vertical-item gallery-item content-absolute text-center cs">
-								<div class="item-media">
-									<img src="<?php echo base_url();?>tool/images/models_square/02.jpg" alt="">
-									<div class="media-links">
-										<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="<?php echo base_url();?>tool/images/models_square/02.jpg"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 snaps">
-							<div class="vertical-item gallery-item content-absolute text-center cs">
-								<div class="item-media">
-									<img src="<?php echo base_url();?>tool/images/models_square/03.jpg" alt="">
-									<div class="media-links">
-										<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="<?php echo base_url();?>tool/images/models_square/03.jpg"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 tests">
-							<div class="vertical-item gallery-item content-absolute text-center cs">
-								<div class="item-media">
-									<img src="<?php echo base_url();?>tool/images/models_square/04.jpg" alt="">
-									<div class="media-links">
-										<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="<?php echo base_url();?>tool/images/models_square/04.jpg"></a>
-									</div>
-								</div>
-							</div>
-						</div>
 
-						<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 tests">
-							<div class="vertical-item gallery-item content-absolute text-center cs">
-								<div class="item-media">
-									<img src="<?php echo base_url();?>tool/images/models_square/07.jpg" alt="">
-									<div class="media-links">
-										<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="<?php echo base_url();?>tool/images/models_square/04.jpg"></a>
+
+						<?php foreach($fotos as $foto){ ?>
+
+
+							<div class="isotope-item bottommargin_10 col-md-3 col-sm-4 col-xs-6 tests">
+								<div class="vertical-item gallery-item content-absolute text-center cs">
+									<div class="item-media">
+										<img src="<?php echo base_url();?>tool/fotos/<?php echo $foto->RUTA?>" alt="">
+										<div class="media-links">
+											<a class="prettyPhoto abs-link" title="" data-gal="prettyPhoto[gal]" href="<?php echo base_url();?>tool/fotos/<?php echo $foto->RUTA?>"></a>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>						
+						
+
+						<?php } ?>
+
+
+
+
 
 					</div>
 					<!-- eof .isotope_container.row -->
@@ -194,14 +170,12 @@
 									<div class="panel-body">
 										<div class="widget widget_tag_cloud">
 											<div class="tagcloud">
-												<a href="#" title="">Parejas hetero</a>
-												<a href="#" title="">Bailes eróticos</a>
-												<a href="#" title="">Besos</a>
-												<a href="#" title="">Disfraces</a>
-												<a href="#" title="">Dos hombres</a>
-												<a href="#" title="">Juguetes</a>
-												<a href="#" title="">Masaje tántrico</a>
-												<a href="#" title="">Eventos y cenas</a>
+												<a href="#" title=""><?php echo $escort->NACIONALIDAD; ?></a>
+												<a href="#" title=""><?php echo $escort->RAZA; ?></a>
+												<a href="#" title=""><?php echo $escort->ESTATURA; ?> cm</a>
+												<a href="#" title=""><?php echo $escort->MEDIDAS; ?></a>
+												<a href="#" title=""><?php echo $escort->PESO; ?> kg</a>
+												<a href="#" title=""><?php echo $escort->EDAD; ?> AÑOS</a>
 											</div>
 										</div>
 									</div>
@@ -287,31 +261,52 @@
 										<table class="table_template">
 											<tr>
 												<td align="right">Lunes</td>
-												<td><i class="rt-icon2-time highlight"></i> 00:00 a 24:00 </td>
+												<td><i class="rt-icon2-time highlight"></i> 
+													<?php echo date('H:s', strtotime($escort->HORA_I));?>  a 
+													<?php echo date('H:s', strtotime($escort->HORA_F));?>
+												</td>
 											</tr>
 											<tr>
 												<td align="right">Martes</td>
-												<td><i class="rt-icon2-time highlight"></i> 00:00 a 24:00</td>
+												<td><i class="rt-icon2-time highlight"></i> 
+													<?php echo date('H:s', strtotime($escort->HORA_I));?> a 
+													<?php echo date('H:s', strtotime($escort->HORA_F));?>
+												</td>
 											</tr>
 											<tr>
 												<td align="right">Miercoles</td>
-												<td><i class="rt-icon2-time highlight"></i> 00:00 a 24:00</td>
+												<td><i class="rt-icon2-time highlight"></i> 
+													<?php echo date('H:s', strtotime($escort->HORA_I));?> a 
+													<?php echo date('H:s', strtotime($escort->HORA_F));?>
+												</td>
 											</tr>
 											<tr>
 												<td align="right">Jueves</td>
-												<td><i class="rt-icon2-time highlight"></i> 00:00 a 24:00</td>
+												<td><i class="rt-icon2-time highlight"></i> 
+													<?php echo date('H:s', strtotime($escort->HORA_I));?> a 
+													<?php echo date('H:s', strtotime($escort->HORA_F));?>
+												</td>
 											</tr>
 											<tr>
 												<td align="right">Vierenes</td>
-												<td> <i class="rt-icon2-time highlight"></i> 00:00 a 24:00</td>
+												<td><i class="rt-icon2-time highlight"></i> 
+													<?php echo date('H:s', strtotime($escort->HORA_I));?> a 
+													<?php echo date('H:s', strtotime($escort->HORA_F));?>
+												</td>
 											</tr>
 											<tr>
 												<td align="right">Sabado</td>
-												<td> <i class="rt-icon2-time highlight"></i> 00:00 a 24:00</td>
+												<td><i class="rt-icon2-time highlight"></i> 
+													<?php echo date('H:s', strtotime($escort->HORA_I));?> a 
+													<?php echo date('H:s', strtotime($escort->HORA_F));?>
+												</td>
 											</tr>
 											<tr>
 												<td align="right">Domingo</td>
-												<td> <i class="rt-icon2-time highlight"></i> 00:00 a 24:00</td>
+												<td><i class="rt-icon2-time highlight"></i> 
+													<?php echo date('H:s', strtotime($escort->HORA_I));?> a 
+													<?php echo date('H:s', strtotime($escort->HORA_F));?>
+												</td>
 											</tr>
 										</table>
 									</div>

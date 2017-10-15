@@ -42,8 +42,8 @@
 							<a href="http://www.myhotplace.com">www.MyHotPlace.com</a>
 						</p>
 						<p style="font-size: 15px">
-							<i class="rt-icon2-mail2 highlight" style="font-size: 20px"></i>
-							<a href="mailto:contacto@myhotplace.com">Contacto@MyHotPlace.com</a>
+							<i class="rt-icon2-megaphone highlight" style="font-size: 15px"></i>
+							<a href="mailto:contacto@myhotplace.com">Denuncias</a>
 						</p>
 						<p style="font-size: 15px">
 							<i class="rt-icon2-info-large-outline highlight" style="font-size: 20px"></i>
@@ -89,7 +89,7 @@
 
 			</div>
 		</div>
-		<h5 align="center">© MyHotPlace | Todos los derechos reservados de Publicación | Chile, 2017</h5>
+		<h5 align="center">© MyHotPlace | Nos reservamos el derecho de publicación | Chile, 2017</h5>
 	</div>
 </footer>
 

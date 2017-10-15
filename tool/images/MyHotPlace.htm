@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://mhp.app/admin/ -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>MyHotPlace</title>
+
+  
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="http://mhp.app/tool/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./MyHotPlace_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./MyHotPlace_files/main.css" id="color-switcher-link">
+  <link rel="stylesheet" href="./MyHotPlace_files/animations.css">
+  <link rel="stylesheet" href="./MyHotPlace_files/fonts.css">
+  <script src="./MyHotPlace_files/modernizr-2.6.2.min.js"></script>
+
+
+
+<script type="text/javascript" charset="UTF-8" src="./MyHotPlace_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./MyHotPlace_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./MyHotPlace_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./MyHotPlace_files/AuthenticationService.Authenticate"></script></head>
+
+<body cz-shortcut-listen="true" class="modal-open">
+  <!--[if lt IE 9]>
+        <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+    <![endif]-->
+
+<!--  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+
+-->
+
+
+  <style type="text/css">
+    
+
+   body{
+
+          background-color: #0D0D0D;
+  }
+  </style>
+
+
+  <!-- wrappers for visual page editor and boxed version of template -->
+<div id="canvas">
+    <div id="box_wrapper">
+
+
+
+<!-- template sections -->
+
+
+<header class="page_header header_darkgrey columns_padding_0 table_section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 text-center">
+        <a href="http://mhp.app/admin/" class="logo logo_image">
+          <h1>My
+            <span class="muellerhoff">HotPlace</span>
+          </h1>
+          <img src="./MyHotPlace_files/logo.png" alt="">
+        </a>
+      </div>
+      <div class="col-md-6 text-center">
+        <!-- main nav start -->
+        <nav class="mainmenu_wrapper">
+          <ul class="mainmenu nav sf-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+            <li class="active">
+              <a href="http://mhp.app/home/index">Inicio</a>
+            </li>
+
+            <li class="page-scroll">
+              <a href="http://mhp.app/admin">Listar</a>
+
+            </li>
+            <!-- eof pages -->
+
+
+          </ul>
+        </nav>
+        <!-- eof main nav -->
+        <span class="toggle_menu">
+          <span></span>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</header>
+<section class="ds ms section_padding_50">
+	<div class="col-sm-12" align="center">
+		<button type="button" class="theme_button inverse" data-toggle="modal" data-target="#myModal">Agregar Cliente</button>
+		
+	</div>
+</section>
+
+
+
+<form action="http://mhp.app/index.php/admin" name="form" method="post" accept-charset="utf-8">
+<!-- Modal Agregar -->
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content ds">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" style="color:white;">x</button>
+          <h4 class="modal-title"><b><i class="rt-icon2-head highlight"></i> AGREGAR CLIENTE</b></h4>
+        </div>
+
+        <div class="modal-body">
+        	<div class="row">
+        		<div class="col-sm-3">
+        			<p><label>NOMBRE<span class="required"> *</span></label>
+					<input type="text" size="30" name="nombre" required="" class="form-control" placeholder="Nombre"></p>
+
+					<p><label>NACIONALIDAD<span class="required"> *</span></label>
+					  <select type="text" name="nacionalidad" required="" class="form-control">
+					  	<option value="Argentina">Argentina</option>
+					  	<option value="Boliviana">Boliviana</option>
+					    <option value="Chilena">Chilena</option>
+					    <option value="Colombiana">Colombiana</option>
+					    <option value="Cubana">Cubana</option>
+					    <option value="Ecuatoriana">Ecuatoriana</option>
+					    <option value="Peruana">Peruana</option>
+					    <option value="Paraguaya">Paraguaya</option>
+					    <option value="Venezolana">Venezolana</option>
+					  </select>
+
+					</p><p><label>RAZA<span class="required"> *</span></label>
+					  <select type="text" name="raza" required="" class="form-control">
+					    <option>CAUCÁSICA</option>
+					    <option>TRIGUEÑA</option>
+					    <option>MORENA</option>
+					  </select>	
+
+					</p><p><label>ESTATURA<span class="required"> *</span></label>
+					<input type="text" size="30" name="estatura" required="" class="form-control" placeholder="Estatura"></p>	
+
+					<p><label>EDAD<span class="required"> *</span></label>
+					<input type="number" min="18" max="55" name="edad" required="" class="form-control" placeholder="Edad"></p>								
+
+        		</div>
+
+        		<div class="col-sm-3">
+					<p><label>MEDIDAS<span class="required"> *</span></label>
+					<input type="text" size="30" name="medidas" required="" class="form-control" placeholder="Medidas"></p>
+
+					<p><label>PESO<span class="required"> *</span></label>
+					<input type="number" min="30" max="100" name="peso" required="" class="form-control" placeholder="Peso"></p>
+
+					<p><label>TELEFONO<span class="required"> *</span></label>
+					<input type="text" size="30" name="telefono" required="" class="form-control" placeholder="Teléfono"></p>
+
+					<p><label>DIRECCION<span class="required"> *</span></label>
+					<input type="text" size="30" name="direccion" required="" class="form-control" placeholder="Dirección"></p>
+
+					<p><label>CIUDAD<span class="required"> *</span></label>
+					<select type="text" name="ciudad" required="" class="form-control">
+					    <option value="Arica">Arica</option>
+					    <option value="Antofagasta">Antofagasta</option>
+					    <option value="Calama">Calama</option>
+					    <option value="Iquique">Iquique</option>
+					 </select>
+					</p>
+        		</div>
+
+        		<div class="col-sm-3">
+					<p><label>VALOR<span class="required"> *</span></label>
+					<input type="number" size="30" name="valor" required="" class="form-control" placeholder="Valor"></p>	
+
+        			<p><label>HORA ENTRADA<span class="required"> *</span></label>
+					<input type="time" name="entrada" required="" class="form-control" placeholder="Hora de Entrada"></p>
+
+					<p><label>HORA SALIDA<span class="required"> *</span></label>
+					<input type="time" name="salida" required="" class="form-control" placeholder="Hora de Salida"></p>
+
+					<p><label>CLASIFICACION<span class="required"> *</span></label>
+					<select type="text" name="clasificacion" required="" class="form-control">
+					    <option>VIP</option>
+					    <option>GOLDEN</option>
+					    <option>PLATINUM</option>
+					    <option>SILVER</option>
+					 </select>
+					</p>
+
+					<p><label>% RETOQUE FOTOS<span class="required"> *</span></label>
+					<input type="number" min="0" max="50" name="retoque" required="" class="form-control" placeholder="Retoque"></p>
+        		</div>
+
+        		<div class="col-sm-3">
+					<p><label>RESEÑA<span class="required"> *</span></label>
+					<textarea name="resena" required="" class="form-control" placeholder="Reseña" rows="18"></textarea></p>
+        		</div>
+        	</div>
+
+				<div class="topmargin_30"></div>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="theme_button inverse" data-dismiss="modal">Cerrar</button>
+          <input type="submit" name="agregar" value="agregar" class="theme_button color1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- / Modal Agregar -->
+</form>	
+
+
+<!-- Tabla Clientes -->		
+<section class="ds ms section_padding_50">
+<div class="col-sm-12">
+	<div class="table-responsive">
+		<div class="modal fade in" id="myModal2" role="dialog" aria-hidden="false" style="display: block;">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content ds">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" style="color:white;">x</button>
+          <h4 class="modal-title"><b><i class="rt-icon2-head highlight"></i> ACTUALIZAR CLIENTE</b></h4>
+        </div>
+
+        <div class="modal-body">
+        	<div class="row">
+        		<div class="col-sm-3">
+        			<input type="text" value="2" hidden="" name="id">
+        			<p><label>NOMBRE<span class="required"> *</span></label>
+					<input type="text" size="30" value="CAROL" name="nombre" required="" class="form-control" placeholder="Nombre"></p>
+
+					<p><label>NACIONALIDAD<span class="required"> *</span></label>
+					  <select type="text" name="nacionalidad" required="" class="form-control">
+					  	<option value="CHILENA" selected="">CHILENA</option>
+					  	<option value="Argentina">Argentina</option>
+					  	<option value="Boliviana">Boliviana</option>
+					    <option value="Chilena">Chilena</option>
+					    <option value="Colombiana">Colombiana</option>
+					    <option value="Cubana">Cubana</option>
+					    <option value="Ecuatoriana">Ecuatoriana</option>
+					    <option value="Peruana">Peruana</option>
+					    <option value="Paraguaya">Paraguaya</option>
+					    <option value="Venezolana">Venezolana</option>
+					  </select>
+
+					</p><p><label>RAZA<span class="required"> *</span></label>
+					  <select type="text" name="raza" required="" class="form-control">
+					  	<option value="TRIGUEÑA" selected="">TRIGUEÑA</option>
+					    <option>CAUCÁSICA</option>
+					    <option>TRIGUEÑA</option>
+					    <option>MORENA</option>
+					  </select>	
+
+					</p><p><label>ESTATURA<span class="required"> *</span></label>
+					<input type="text" size="30" value="1.68" name="estatura" required="" class="form-control" placeholder="Estatura"></p>	
+
+					<p><label>EDAD<span class="required"> *</span></label>
+					<input type="number" min="18" max="55" value="25" name="edad" required="" class="form-control" placeholder="Edad"></p>								
+
+        		</div>
+
+        		<div class="col-sm-3">
+					<p><label>MEDIDAS<span class="required"> *</span></label>
+					<input type="text" size="30" value="99-63-100" name="medidas" required="" class="form-control" placeholder="Medidas"></p>
+
+					<p><label>PESO<span class="required"> *</span></label>
+					<input type="number" min="30" max="100" value="62" name="peso" required="" class="form-control" placeholder="Peso"></p>
+
+					<p><label>TELEFONO<span class="required"> *</span></label>
+					<input type="text" size="30" value="56976 741943" name="telefono" required="" class="form-control" placeholder="Teléfono"></p>
+
+					<p><label>DIRECCION<span class="required"> *</span></label>
+					<input type="text" size="30" value="JUAN MARTINEZ 123" name="direccion" required="" class="form-control" placeholder="Dirección"></p>
+
+					<p><label>CIUDAD<span class="required"> *</span></label>
+					<select type="text" name="ciudad" required="" class="form-control">
+						<option value="IQUIQUE" selected="">IQUIQUE</option>
+					    <option value="Arica">Arica</option>
+					    <option value="Antofagasta">Antofagasta</option>
+					    <option value="Calama">Calama</option>
+					    <option value="Iquique">Iquique</option>
+					 </select>
+					</p>
+        		</div>
+
+        		<div class="col-sm-3">
+
+
+
+					<p><label>VALOR<span class="required"> *</span></label>
+					<input type="number" size="30" value="70000" name="valor" required="" class="form-control" placeholder="Valor"></p>	
+
+        			<p><label>HORA ENTRADA<span class="required"> *</span></label>
+					<input type="time" value="16:00:00" name="entrada" required="" class="form-control" placeholder="Hora de Entrada"></p>
+
+					<p><label>HORA SALIDA<span class="required"> *</span></label>
+					<input type="time" value="04:00:00" name="salida" required="" class="form-control" placeholder="Hora de Salida"></p>
+
+					<p><label>CLASIFICACION<span class="required"> *</span></label>
+					<select type="text" name="clasificacion" required="" class="form-control">
+						<option value="VIP" selected="">VIP</option>
+					    <option>VIP</option>
+					    <option>GOLDEN</option>
+					    <option>PLATINUM</option>
+					    <option>SILVER</option>
+					 </select>
+					</p>
+
+					<p><label>% RETOQUE FOTOS<span class="required"> *</span></label>
+					<input type="number" min="0" max="50" value="5" name="retoque" required="" class="form-control" placeholder="Retoque"></p>
+        		</div>
+
+        		<div class="col-sm-3">
+
+					<p><label>RESEÑA<span class="required"> *</span></label>
+					<textarea name="resena" required="" class="form-control" placeholder="Reseña" rows="18">TENGO PARA TI PODRáS VER SOY 100% REAL FOTOS CASERAS Y ESTUDIO PARA QUE Tú VEAS QUE SOY UNA CHICA TAL CUAL SIN MENTIRAS ..SOLO VEN Y DISFRUTA DE TODA MI SENSUALIDAD Y BELLEZA QUE TENGO PARA ENTREGARTE SOY UNA CHICA MUY ... RELAJADA Y APASIONADA TENDRáS UN TRATO DE POLOLO QUE NO OLVIDARAS SOLO LLáMAME.</textarea></p>
+
+
+        		</div>
+        	</div>
+
+				<div class="topmargin_30"></div>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="theme_button inverse" data-dismiss="modal">Cerrar</button>
+          <input type="submit" name="actualizar" value="actualizar" class="theme_button color1">
+        </div>
+      </div>
+    </div>
+  </div><div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content ds">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" style="color:white;">x</button>
+          <h4 class="modal-title"><b><i class="rt-icon2-head highlight"></i> ACTUALIZAR CLIENTE</b></h4>
+        </div>
+
+        <div class="modal-body">
+        	<div class="row">
+        		<div class="col-sm-3">
+        			<input type="text" value="3" hidden="" name="id">
+        			<p><label>NOMBRE<span class="required"> *</span></label>
+					<input type="text" size="30" value="CARLA" name="nombre" required="" class="form-control" placeholder="Nombre"></p>
+
+					<p><label>NACIONALIDAD<span class="required"> *</span></label>
+					  <select type="text" name="nacionalidad" required="" class="form-control">
+					  	<option value="VENEZOLANA" selected="">VENEZOLANA</option>
+					  	<option value="Argentina">Argentina</option>
+					  	<option value="Boliviana">Boliviana</option>
+					    <option value="Chilena">Chilena</option>
+					    <option value="Colombiana">Colombiana</option>
+					    <option value="Cubana">Cubana</option>
+					    <option value="Ecuatoriana">Ecuatoriana</option>
+					    <option value="Peruana">Peruana</option>
+					    <option value="Paraguaya">Paraguaya</option>
+					    <option value="Venezolana">Venezolana</option>
+					  </select>
+
+					</p><p><label>RAZA<span class="required"> *</span></label>
+					  <select type="text" name="raza" required="" class="form-control">
+					  	<option value="CAUCÁSICA" selected="">CAUCÁSICA</option>
+					    <option>CAUCÁSICA</option>
+					    <option>TRIGUEÑA</option>
+					    <option>MORENA</option>
+					  </select>	
+
+					</p><p><label>ESTATURA<span class="required"> *</span></label>
+					<input type="text" size="30" value="1.63" name="estatura" required="" class="form-control" placeholder="Estatura"></p>	
+
+					<p><label>EDAD<span class="required"> *</span></label>
+					<input type="number" min="18" max="55" value="25" name="edad" required="" class="form-control" placeholder="Edad"></p>								
+
+        		</div>
+
+        		<div class="col-sm-3">
+					<p><label>MEDIDAS<span class="required"> *</span></label>
+					<input type="text" size="30" value="89-62-80" name="medidas" required="" class="form-control" placeholder="Medidas"></p>
+
+					<p><label>PESO<span class="required"> *</span></label>
+					<input type="number" min="30" max="100" value="57" name="peso" required="" class="form-control" placeholder="Peso"></p>
+
+					<p><label>TELEFONO<span class="required"> *</span></label>
+					<input type="text" size="30" value="94567896" name="telefono" required="" class="form-control" placeholder="Teléfono"></p>
+
+					<p><label>DIRECCION<span class="required"> *</span></label>
+					<input type="text" size="30" value="BARROS ARANA 123" name="direccion" required="" class="form-control" placeholder="Dirección"></p>
+
+					<p><label>CIUDAD<span class="required"> *</span></label>
+					<select type="text" name="ciudad" required="" class="form-control">
+						<option value="ARICA" selected="">ARICA</option>
+					    <option value="Arica">Arica</option>
+					    <option value="Antofagasta">Antofagasta</option>
+					    <option value="Calama">Calama</option>
+					    <option value="Iquique">Iquique</option>
+					 </select>
+					</p>
+        		</div>
+
+        		<div class="col-sm-3">
+
+
+
+					<p><label>VALOR<span class="required"> *</span></label>
+					<input type="number" size="30" value="80000" name="valor" required="" class="form-control" placeholder="Valor"></p>	
+
+        			<p><label>HORA ENTRADA<span class="required"> *</span></label>
+					<input type="time" value="13:00:00" name="entrada" required="" class="form-control" placeholder="Hora de Entrada"></p>
+
+					<p><label>HORA SALIDA<span class="required"> *</span></label>
+					<input type="time" value="06:00:00" name="salida" required="" class="form-control" placeholder="Hora de Salida"></p>
+
+					<p><label>CLASIFICACION<span class="required"> *</span></label>
+					<select type="text" name="clasificacion" required="" class="form-control">
+						<option value="VIP" selected="">VIP</option>
+					    <option>VIP</option>
+					    <option>GOLDEN</option>
+					    <option>PLATINUM</option>
+					    <option>SILVER</option>
+					 </select>
+					</p>
+
+					<p><label>% RETOQUE FOTOS<span class="required"> *</span></label>
+					<input type="number" min="0" max="50" value="2" name="retoque" required="" class="form-control" placeholder="Retoque"></p>
+        		</div>
+
+        		<div class="col-sm-3">
+
+					<p><label>RESEÑA<span class="required"> *</span></label>
+					<textarea name="resena" required="" class="form-control" placeholder="Reseña" rows="18"></textarea></p>
+
+
+        		</div>
+        	</div>
+
+				<div class="topmargin_30"></div>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="theme_button inverse" data-dismiss="modal">Cerrar</button>
+          <input type="submit" name="actualizar" value="actualizar" class="theme_button color1">
+        </div>
+      </div>
+    </div>
+  </div><div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content ds">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" style="color:white;">x</button>
+          <h4 class="modal-title"><b><i class="rt-icon2-head highlight"></i> ACTUALIZAR CLIENTE</b></h4>
+        </div>
+
+        <div class="modal-body">
+        	<div class="row">
+        		<div class="col-sm-3">
+        			<input type="text" value="4" hidden="" name="id">
+        			<p><label>NOMBRE<span class="required"> *</span></label>
+					<input type="text" size="30" value="ESTEFANIA" name="nombre" required="" class="form-control" placeholder="Nombre"></p>
+
+					<p><label>NACIONALIDAD<span class="required"> *</span></label>
+					  <select type="text" name="nacionalidad" required="" class="form-control">
+					  	<option value="CHILENA" selected="">CHILENA</option>
+					  	<option value="Argentina">Argentina</option>
+					  	<option value="Boliviana">Boliviana</option>
+					    <option value="Chilena">Chilena</option>
+					    <option value="Colombiana">Colombiana</option>
+					    <option value="Cubana">Cubana</option>
+					    <option value="Ecuatoriana">Ecuatoriana</option>
+					    <option value="Peruana">Peruana</option>
+					    <option value="Paraguaya">Paraguaya</option>
+					    <option value="Venezolana">Venezolana</option>
+					  </select>
+
+					</p><p><label>RAZA<span class="required"> *</span></label>
+					  <select type="text" name="raza" required="" class="form-control">
+					  	<option value="MORENA" selected="">MORENA</option>
+					    <option>CAUCÁSICA</option>
+					    <option>TRIGUEÑA</option>
+					    <option>MORENA</option>
+					  </select>	
+
+					</p><p><label>ESTATURA<span class="required"> *</span></label>
+					<input type="text" size="30" value="1.72" name="estatura" required="" class="form-control" placeholder="Estatura"></p>	
+
+					<p><label>EDAD<span class="required"> *</span></label>
+					<input type="number" min="18" max="55" value="28" name="edad" required="" class="form-control" placeholder="Edad"></p>								
+
+        		</div>
+
+        		<div class="col-sm-3">
+					<p><label>MEDIDAS<span class="required"> *</span></label>
+					<input type="text" size="30" value="95-60-90" name="medidas" required="" class="form-control" placeholder="Medidas"></p>
+
+					<p><label>PESO<span class="required"> *</span></label>
+					<input type="number" min="30" max="100" value="59" name="peso" required="" class="form-control" placeholder="Peso"></p>
+
+					<p><label>TELEFONO<span class="required"> *</span></label>
+					<input type="text" size="30" value="95697890" name="telefono" required="" class="form-control" placeholder="Teléfono"></p>
+
+					<p><label>DIRECCION<span class="required"> *</span></label>
+					<input type="text" size="30" value="VIVAR 123" name="direccion" required="" class="form-control" placeholder="Dirección"></p>
+
+					<p><label>CIUDAD<span class="required"> *</span></label>
+					<select type="text" name="ciudad" required="" class="form-control">
+						<option value="IQUIQUE" selected="">IQUIQUE</option>
+					    <option value="Arica">Arica</option>
+					    <option value="Antofagasta">Antofagasta</option>
+					    <option value="Calama">Calama</option>
+					    <option value="Iquique">Iquique</option>
+					 </select>
+					</p>
+        		</div>
+
+        		<div class="col-sm-3">
+
+
+
+					<p><label>VALOR<span class="required"> *</span></label>
+					<input type="number" size="30" value="50000" name="valor" required="" class="form-control" placeholder="Valor"></p>	
+
+        			<p><label>HORA ENTRADA<span class="required"> *</span></label>
+					<input type="time" value="06:00:00" name="entrada" required="" class="form-control" placeholder="Hora de Entrada"></p>
+
+					<p><label>HORA SALIDA<span class="required"> *</span></label>
+					<input type="time" value="15:00:00" name="salida" required="" class="form-control" placeholder="Hora de Salida"></p>
+
+					<p><label>CLASIFICACION<span class="required"> *</span></label>
+					<select type="text" name="clasificacion" required="" class="form-control">
+						<option value="GOLDEN" selected="">GOLDEN</option>
+					    <option>VIP</option>
+					    <option>GOLDEN</option>
+					    <option>PLATINUM</option>
+					    <option>SILVER</option>
+					 </select>
+					</p>
+
+					<p><label>% RETOQUE FOTOS<span class="required"> *</span></label>
+					<input type="number" min="0" max="50" value="5" name="retoque" required="" class="form-control" placeholder="Retoque"></p>
+        		</div>
+
+        		<div class="col-sm-3">
+
+					<p><label>RESEÑA<span class="required"> *</span></label>
+					<textarea name="resena" required="" class="form-control" placeholder="Reseña" rows="18">FUU</textarea></p>
+
+
+        		</div>
+        	</div>
+
+				<div class="topmargin_30"></div>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="theme_button inverse" data-dismiss="modal">Cerrar</button>
+          <input type="submit" name="actualizar" value="actualizar" class="theme_button color1">
+        </div>
+      </div>
+    </div>
+  </div><div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content ds">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" style="color:white;">x</button>
+          <h4 class="modal-title"><b><i class="rt-icon2-head highlight"></i> ACTUALIZAR CLIENTE</b></h4>
+        </div>
+
+        <div class="modal-body">
+        	<div class="row">
+        		<div class="col-sm-3">
+        			<input type="text" value="5" hidden="" name="id">
+        			<p><label>NOMBRE<span class="required"> *</span></label>
+					<input type="text" size="30" value="CIELO" name="nombre" required="" class="form-control" placeholder="Nombre"></p>
+
+					<p><label>NACIONALIDAD<span class="required"> *</span></label>
+					  <select type="text" name="nacionalidad" required="" class="form-control">
+					  	<option value="URUGUAYA" selected="">URUGUAYA</option>
+					  	<option value="Argentina">Argentina</option>
+					  	<option value="Boliviana">Boliviana</option>
+					    <option value="Chilena">Chilena</option>
+					    <option value="Colombiana">Colombiana</option>
+					    <option value="Cubana">Cubana</option>
+					    <option value="Ecuatoriana">Ecuatoriana</option>
+					    <option value="Peruana">Peruana</option>
+					    <option value="Paraguaya">Paraguaya</option>
+					    <option value="Venezolana">Venezolana</option>
+					  </select>
+
+					</p><p><label>RAZA<span class="required"> *</span></label>
+					  <select type="text" name="raza" required="" class="form-control">
+					  	<option value="TRIGUEÑA" selected="">TRIGUEÑA</option>
+					    <option>CAUCÁSICA</option>
+					    <option>TRIGUEÑA</option>
+					    <option>MORENA</option>
+					  </select>	
+
+					</p><p><label>ESTATURA<span class="required"> *</span></label>
+					<input type="text" size="30" value="1.65" name="estatura" required="" class="form-control" placeholder="Estatura"></p>	
+
+					<p><label>EDAD<span class="required"> *</span></label>
+					<input type="number" min="18" max="55" value="33" name="edad" required="" class="form-control" placeholder="Edad"></p>								
+
+        		</div>
+
+        		<div class="col-sm-3">
+					<p><label>MEDIDAS<span class="required"> *</span></label>
+					<input type="text" size="30" value="94-62-96" name="medidas" required="" class="form-control" placeholder="Medidas"></p>
+
+					<p><label>PESO<span class="required"> *</span></label>
+					<input type="number" min="30" max="100" value="63" name="peso" required="" class="form-control" placeholder="Peso"></p>
+
+					<p><label>TELEFONO<span class="required"> *</span></label>
+					<input type="text" size="30" value="98767890" name="telefono" required="" class="form-control" placeholder="Teléfono"></p>
+
+					<p><label>DIRECCION<span class="required"> *</span></label>
+					<input type="text" size="30" value="ANIBAL PINTO 123" name="direccion" required="" class="form-control" placeholder="Dirección"></p>
+
+					<p><label>CIUDAD<span class="required"> *</span></label>
+					<select type="text" name="ciudad" required="" class="form-control">
+						<option value="IQUIQUE" selected="">IQUIQUE</option>
+					    <option value="Arica">Arica</option>
+					    <option value="Antofagasta">Antofagasta</option>
+					    <option value="Calama">Calama</option>
+					    <option value="Iquique">Iquique</option>
+					 </select>
+					</p>
+        		</div>
+
+        		<div class="col-sm-3">
+
+
+
+					<p><label>VALOR<span class="required"> *</span></label>
+					<input type="number" size="30" value="95000" name="valor" required="" class="form-control" placeholder="Valor"></p>	
+
+        			<p><label>HORA ENTRADA<span class="required"> *</span></label>
+					<input type="time" value="08:00:00" name="entrada" required="" class="form-control" placeholder="Hora de Entrada"></p>
+
+					<p><label>HORA SALIDA<span class="required"> *</span></label>
+					<input type="time" value="15:00:00" name="salida" required="" class="form-control" placeholder="Hora de Salida"></p>
+
+					<p><label>CLASIFICACION<span class="required"> *</span></label>
+					<select type="text" name="clasificacion" required="" class="form-control">
+						<option value="VIP" selected="">VIP</option>
+					    <option>VIP</option>
+					    <option>GOLDEN</option>
+					    <option>PLATINUM</option>
+					    <option>SILVER</option>
+					 </select>
+					</p>
+
+					<p><label>% RETOQUE FOTOS<span class="required"> *</span></label>
+					<input type="number" min="0" max="50" value="2" name="retoque" required="" class="form-control" placeholder="Retoque"></p>
+        		</div>
+
+        		<div class="col-sm-3">
+
+					<p><label>RESEÑA<span class="required"> *</span></label>
+					<textarea name="resena" required="" class="form-control" placeholder="Reseña" rows="18"></textarea></p>
+
+
+        		</div>
+        	</div>
+
+				<div class="topmargin_30"></div>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="theme_button inverse" data-dismiss="modal">Cerrar</button>
+          <input type="submit" name="actualizar" value="actualizar" class="theme_button color1">
+        </div>
+      </div>
+    </div>
+  </div><table class="table_template">
+			<thead class="light">
+				<tr>
+					<th>NOMBRE</th>
+					<th>NACIONALIDAD</th>
+					<th>ALTURA PESO</th>
+					<th>MEDIDAS</th>
+					<th>TELEFONO</th>
+					<th>DIRECCION</th>
+					<th>VALOR</th>
+					<th>ACCIONES</th>
+				</tr>
+			</thead>
+			<tbody class="grey">
+							<tr>
+					<td>CAROL <br> 25 AÑOS</td>
+					<td>CHILENA, TRIGUEÑA</td>
+					<td>1.68 m <br>62 Kg</td>
+					<td>99-63-100</td>
+					<td>56976 741943</td>
+					<td>JUAN MARTINEZ 123, IQUIQUE</td>
+					<td>$70000 <br> VIP</td>
+					<td align="center" width="15%">
+						<h3>
+						<a href="http://mhp.app/admin/delete/2"><i class="rt-icon2-trash highlight"></i></a>&nbsp;
+						<a data-toggle="modal" href="http://mhp.app/admin/#myModal2"><i class="rt-icon2-pen highlight"></i></a>&nbsp;
+						<a href="http://mhp.app/admin/info?id=2"><i class="rt-icon2-camera3 highlight"></i></a>
+						</h3>
+					</td>
+				</tr>
+
+
+<form action="http://mhp.app/index.php/admin" name="form" enctype="multipart/form-data" method="post" accept-charset="utf-8"></form>
+<!-- Modal Agregar -->
+
+  
+
+<!-- / Modal Agregar -->
+
+
+
+
+
+
+	
+
+
+
+
+
+							<tr>
+					<td>CARLA <br> 25 AÑOS</td>
+					<td>VENEZOLANA, CAUCÁSICA</td>
+					<td>1.63 m <br>57 Kg</td>
+					<td>89-62-80</td>
+					<td>94567896</td>
+					<td>BARROS ARANA 123, ARICA</td>
+					<td>$80000 <br> VIP</td>
+					<td align="center" width="15%">
+						<h3>
+						<a href="http://mhp.app/admin/delete/3"><i class="rt-icon2-trash highlight"></i></a>&nbsp;
+						<a data-toggle="modal" href="http://mhp.app/admin/#myModal3"><i class="rt-icon2-pen highlight"></i></a>&nbsp;
+						<a href="http://mhp.app/admin/info?id=3"><i class="rt-icon2-camera3 highlight"></i></a>
+						</h3>
+					</td>
+				</tr>
+
+
+<form action="http://mhp.app/index.php/admin" name="form" enctype="multipart/form-data" method="post" accept-charset="utf-8"></form>
+<!-- Modal Agregar -->
+
+  
+
+<!-- / Modal Agregar -->
+
+
+
+
+
+
+	
+
+
+
+
+
+							<tr>
+					<td>ESTEFANIA <br> 28 AÑOS</td>
+					<td>CHILENA, MORENA</td>
+					<td>1.72 m <br>59 Kg</td>
+					<td>95-60-90</td>
+					<td>95697890</td>
+					<td>VIVAR 123, IQUIQUE</td>
+					<td>$50000 <br> GOLDEN</td>
+					<td align="center" width="15%">
+						<h3>
+						<a href="http://mhp.app/admin/delete/4"><i class="rt-icon2-trash highlight"></i></a>&nbsp;
+						<a data-toggle="modal" href="http://mhp.app/admin/#myModal4"><i class="rt-icon2-pen highlight"></i></a>&nbsp;
+						<a href="http://mhp.app/admin/info?id=4"><i class="rt-icon2-camera3 highlight"></i></a>
+						</h3>
+					</td>
+				</tr>
+
+
+<form action="http://mhp.app/index.php/admin" name="form" enctype="multipart/form-data" method="post" accept-charset="utf-8"></form>
+<!-- Modal Agregar -->
+
+  
+
+<!-- / Modal Agregar -->
+
+
+
+
+
+
+	
+
+
+
+
+
+							<tr>
+					<td>CIELO <br> 33 AÑOS</td>
+					<td>URUGUAYA, TRIGUEÑA</td>
+					<td>1.65 m <br>63 Kg</td>
+					<td>94-62-96</td>
+					<td>98767890</td>
+					<td>ANIBAL PINTO 123, IQUIQUE</td>
+					<td>$95000 <br> VIP</td>
+					<td align="center" width="15%">
+						<h3>
+						<a href="http://mhp.app/admin/delete/5"><i class="rt-icon2-trash highlight"></i></a>&nbsp;
+						<a data-toggle="modal" href="http://mhp.app/admin/#myModal5"><i class="rt-icon2-pen highlight"></i></a>&nbsp;
+						<a href="http://mhp.app/admin/info?id=5"><i class="rt-icon2-camera3 highlight"></i></a>
+						</h3>
+					</td>
+				</tr>
+
+
+<form action="http://mhp.app/index.php/admin" name="form" enctype="multipart/form-data" method="post" accept-charset="utf-8"></form>
+<!-- Modal Agregar -->
+
+  
+
+<!-- / Modal Agregar -->
+
+
+
+
+
+
+	
+
+
+
+
+
+						</tbody>
+		</table>
+	</div>	
+
+
+</div>
+
+</section>
+<!-- / Tabla Clientes -->	
+
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="./MyHotPlace_files/compressed.js"></script>
+	<script src="./MyHotPlace_files/main.js"></script>
+
+	<script type="text/javascript" src="./MyHotPlace_files/js"></script>
+
+
+
+
+
+
+<a href="http://mhp.app/admin/#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a><div class="modal-backdrop fade in"></div></body></html>
