@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 12-10-2017 a las 21:50:26
+-- Tiempo de generación: 15-10-2017 a las 20:56:53
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -82,8 +82,7 @@ CREATE TABLE `escort` (
 --
 
 INSERT INTO `escort` (`ID`, `NOMBRE`, `NACIONALIDAD`, `RAZA`, `EDAD`, `ESTATURA`, `MEDIDAS`, `PESO`, `TELEFONO`, `DIRECCION`, `CIUDAD`, `DEPTO`, `RESENA`, `VALOR`, `HORA_I`, `HORA_F`, `CLASIFICACION`, `RETOQUE`) VALUES
-(1, 'ALEXANDRA', 'CHILENA', 'TRIGUEÑA', 22, 1.68, '90-60-90', 56, '69696969', 'ESMERALDA 123', 'IQUIQUE', 1, 'SAS', 80000, '16:00:00', '06:00:00', 'GOLDEN', 20),
-(2, 'MONICA', 'COLOMBIANA', 'NEGRA', 30, 1.7, '94-66-93', 59, '98989899', 'THOMSON 123', 'ANTOFAGASTA', 1, NULL, 70000, '19:00:00', '04:00:00', 'PLANITUM', 5),
+(2, 'CAROL', 'CHILENA', 'TRIGUEÑA', 25, 1.68, '99-63-100', 62, '56976741943', 'JUAN MARTINEZ 123', 'IQUIQUE', 1, 'TENGO PARA TI PODRAS VER SOY 100% REAL FOTOS CASERAS Y ESTUDIO PARA QUE Tú VEAS QUE SOY UNA CHICA TAL CUAL SIN MENTIRAS. SOLO VEN Y DISFRUTA DE TODA MI SENSUALIDAD Y BELLEZA QUE TENGO PARA ENTREGARTE SOY UNA CHICA MUY ... RELAJADA Y APASIONADA TENDRáS UN TRATO DE POLOLO QUE NO OLVIDARAS SOLO LLAMAME.', 70000, '16:00:00', '04:00:00', 'VIP', 5),
 (3, 'CARLA', 'VENEZOLANA', 'CAUCÁSICA', 25, 1.63, '89-62-80', 57, '94567896', 'BARROS ARANA 123', 'ARICA', 1, NULL, 80000, '13:00:00', '06:00:00', 'VIP', 2),
 (4, 'ESTEFANIA', 'CHILENA', 'MORENA', 28, 1.72, '95-60-90', 59, '95697890', 'VIVAR 123', 'IQUIQUE', 1, 'FUU', 50000, '06:00:00', '15:00:00', 'GOLDEN', 5),
 (5, 'CIELO', 'URUGUAYA', 'TRIGUEÑA', 33, 1.65, '94-62-96', 63, '98767890', 'ANIBAL PINTO 123', 'IQUIQUE', 1, NULL, 95000, '08:00:00', '15:00:00', 'VIP', 2);
@@ -98,9 +97,19 @@ CREATE TABLE `foto` (
   `ID` int(11) NOT NULL,
   `PRIORIDAD` int(11) DEFAULT NULL,
   `RUTA` varchar(250) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `MOSTRAR` tinyint(1) NOT NULL,
+  `MOSTRAR` tinyint(1) DEFAULT NULL,
   `FK_ESCORT` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `foto`
+--
+
+INSERT INTO `foto` (`ID`, `PRIORIDAD`, `RUTA`, `MOSTRAR`, `FK_ESCORT`) VALUES
+(1, 1, 'd349e976db592b42f3efd143492a77a4.png', 1, 1),
+(5, 1, '91d798b6d2ab60e617874b99831c0dc1.jpeg', 1, 2),
+(6, 1, 'c2dca197132e1afde27f9b9ca86e4c4c.jpeg', 1, 2),
+(7, 1, 'a91beeed71a8bb2ab80dd91ce06b9384.jpeg', 1, 2);
 
 -- --------------------------------------------------------
 
@@ -125,6 +134,18 @@ CREATE TABLE `tag` (
   `NOMBRE` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `FK_ESCORT` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `visitas`
+--
+
+CREATE TABLE `visitas` (
+  `ID` int(11) NOT NULL,
+  `CONT` int(11) NOT NULL,
+  `FK_ESCORT` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Índices para tablas volcadas
@@ -161,6 +182,12 @@ ALTER TABLE `tag`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indices de la tabla `visitas`
+--
+ALTER TABLE `visitas`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -168,12 +195,12 @@ ALTER TABLE `tag`
 -- AUTO_INCREMENT de la tabla `escort`
 --
 ALTER TABLE `escort`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `foto`
 --
 ALTER TABLE `foto`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT de la tabla `servicio`
 --
@@ -183,6 +210,11 @@ ALTER TABLE `servicio`
 -- AUTO_INCREMENT de la tabla `tag`
 --
 ALTER TABLE `tag`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `visitas`
+--
+ALTER TABLE `visitas`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
